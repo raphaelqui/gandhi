@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "reservations": "Prenotazioni",
+    "order": "Ordina"
+  },
+  "home": {
+    "title": "Benvenuto nel nostro ristorante",
+    "subtitle": "Goditi la cucina di prima classe in un'atmosfera accogliente",
+    "reserveButton": "Prenota un tavolo",
+    "menuButton": "Vedi menu",
+    "ourMenu": "Il nostro menu",
+    "ourMenuDesc": "Scopri la nostra selezione variegata di piatti deliziosi",
+    "tableReservation": "Prenotazione tavolo",
+    "tableReservationDesc": "Prenota il tuo tavolo in tempo reale e consulta i posti disponibili",
+    "onlineOrder": "Ordina online",
+    "onlineOrderDesc": "Ordina comodamente online per il ritiro con vari metodi di pagamento"
+  },
+  "reservations": {
+    "title": "Prenotazione tavolo",
+    "subtitle": "Seleziona un tavolo disponibile. Le prenotazioni vengono aggiornate in tempo reale.",
+    "table": "Tavolo",
+    "persons": "Persone",
+    "available": "Disponibile",
+    "reserved": "Riservato",
+    "reservedBy": "Riservato da",
+    "reserveTable": "Prenota tavolo",
+    "name": "Nome",
+    "email": "Email",
+    "phone": "Telefono",
+    "date": "Data",
+    "time": "Ora",
+    "cancel": "Annulla",
+    "reserve": "Prenota"
+  },
+  "menu": {
+    "title": "Il nostro menu",
+    "all": "Tutti",
+    "appetizer": "Antipasti",
+    "main": "Piatti principali",
+    "dessert": "Dolci",
+    "drink": "Bevande"
+  },
+  "order": {
+    "title": "Ordina online",
+    "subtitle": "Seleziona i tuoi piatti e effettua il tuo ordine per il ritiro.",
+    "successMessage": "Ordine effettuato con successo! Stiamo preparando il tuo ordine.",
+    "menuTitle": "Menu",
+    "addToCart": "Aggiungi",
+    "cart": "Carrello",
+    "cartEmpty": "Il tuo carrello è vuoto",
+    "total": "Totale",
+    "customerName": "Nome",
+    "customerEmail": "Email",
+    "paymentMethod": "Metodo di pagamento",
+    "cash": "Pagamento in contanti al ritiro",
+    "swipe": "Pagamento con carta",
+    "paypal": "PayPal",
+    "placeOrder": "Effettua ordine"
+  },
+  "footer": {
+    "copyright": "© 2025 Restaurant Name. Tutti i diritti riservati."
+  }
+}

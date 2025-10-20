@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "menu": "Menú",
+    "reservations": "Reservas",
+    "order": "Pedir"
+  },
+  "home": {
+    "title": "Bienvenido a nuestro restaurante",
+    "subtitle": "Disfruta de una cocina de primera clase en un ambiente acogedor",
+    "reserveButton": "Reservar mesa",
+    "menuButton": "Ver menú",
+    "ourMenu": "Nuestro menú",
+    "ourMenuDesc": "Descubre nuestra variada selección de deliciosos platos",
+    "tableReservation": "Reserva de mesa",
+    "tableReservationDesc": "Reserva tu mesa en tiempo real y consulta los asientos disponibles",
+    "onlineOrder": "Pedir en línea",
+    "onlineOrderDesc": "Pide cómodamente en línea para recoger con varios métodos de pago"
+  },
+  "reservations": {
+    "title": "Reserva de mesa",
+    "subtitle": "Selecciona una mesa disponible. Las reservas se actualizan en tiempo real.",
+    "table": "Mesa",
+    "persons": "Personas",
+    "available": "Disponible",
+    "reserved": "Reservado",
+    "reservedBy": "Reservado por",
+    "reserveTable": "Reservar mesa",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "date": "Fecha",
+    "time": "Hora",
+    "cancel": "Cancelar",
+    "reserve": "Reservar"
+  },
+  "menu": {
+    "title": "Nuestro menú",
+    "all": "Todos",
+    "appetizer": "Entrantes",
+    "main": "Platos principales",
+    "dessert": "Postres",
+    "drink": "Bebidas"
+  },
+  "order": {
+    "title": "Pedir en línea",
+    "subtitle": "Selecciona tus platos y haz tu pedido para recoger.",
+    "successMessage": "¡Pedido realizado con éxito! Estamos preparando tu pedido.",
+    "menuTitle": "Menú",
+    "addToCart": "Añadir",
+    "cart": "Carrito",
+    "cartEmpty": "Tu carrito está vacío",
+    "total": "Total",
+    "customerName": "Nombre",
+    "customerEmail": "Correo electrónico",
+    "paymentMethod": "Método de pago",
+    "cash": "Pago en efectivo al recoger",
+    "swipe": "Pago con tarjeta",
+    "paypal": "PayPal",
+    "placeOrder": "Realizar pedido"
+  },
+  "footer": {
+    "copyright": "© 2025 Restaurant Name. Todos los derechos reservados."
+  }
+}

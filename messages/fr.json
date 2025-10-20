@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "menu": "Menu",
+    "reservations": "Réservation",
+    "order": "Commander"
+  },
+  "home": {
+    "title": "Bienvenue dans notre restaurant",
+    "subtitle": "Profitez d'une cuisine de première classe dans une atmosphère chaleureuse",
+    "reserveButton": "Réserver une table",
+    "menuButton": "Voir le menu",
+    "ourMenu": "Notre carte",
+    "ourMenuDesc": "Découvrez notre sélection variée de plats délicieux",
+    "tableReservation": "Réservation de table",
+    "tableReservationDesc": "Réservez votre table en temps réel et consultez les places disponibles",
+    "onlineOrder": "Commander en ligne",
+    "onlineOrderDesc": "Commandez facilement en ligne pour retirer avec différents modes de paiement"
+  },
+  "reservations": {
+    "title": "Réservation de table",
+    "subtitle": "Sélectionnez une table disponible. Les réservations sont mises à jour en temps réel.",
+    "table": "Table",
+    "persons": "Personnes",
+    "available": "Disponible",
+    "reserved": "Réservé",
+    "reservedBy": "Réservé par",
+    "reserveTable": "Réserver la table",
+    "name": "Nom",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "date": "Date",
+    "time": "Heure",
+    "cancel": "Annuler",
+    "reserve": "Réserver"
+  },
+  "menu": {
+    "title": "Notre menu",
+    "all": "Tous",
+    "appetizer": "Entrées",
+    "main": "Plats principaux",
+    "dessert": "Desserts",
+    "drink": "Boissons"
+  },
+  "order": {
+    "title": "Commander en ligne",
+    "subtitle": "Sélectionnez vos plats et passez votre commande à emporter.",
+    "successMessage": "Commande passée avec succès ! Nous préparons votre commande.",
+    "menuTitle": "Menu",
+    "addToCart": "Ajouter",
+    "cart": "Panier",
+    "cartEmpty": "Votre panier est vide",
+    "total": "Total",
+    "customerName": "Nom",
+    "customerEmail": "E-mail",
+    "paymentMethod": "Mode de paiement",
+    "cash": "Paiement en espèces au retrait",
+    "swipe": "Paiement par carte",
+    "paypal": "PayPal",
+    "placeOrder": "Passer la commande"
+  },
+  "footer": {
+    "copyright": "© 2025 Restaurant Name. Tous droits réservés."
+  }
+}

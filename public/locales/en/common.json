@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "reservations": "Reservations",
+    "order": "Order"
+  },
+  "home": {
+    "title": "Welcome to Our Restaurant",
+    "subtitle": "Enjoy first-class cuisine in a cozy atmosphere",
+    "reserveButton": "Reserve a Table",
+    "menuButton": "View Menu",
+    "ourMenu": "Our Menu",
+    "ourMenuDesc": "Discover our diverse selection of delicious dishes",
+    "tableReservation": "Table Reservation",
+    "tableReservationDesc": "Reserve your table in real-time and see available seats",
+    "onlineOrder": "Order Online",
+    "onlineOrderDesc": "Order conveniently online for pickup with various payment methods"
+  },
+  "reservations": {
+    "title": "Table Reservation",
+    "subtitle": "Select an available table. Reservations are updated in real-time.",
+    "table": "Table",
+    "persons": "Persons",
+    "available": "Available",
+    "reserved": "Reserved",
+    "reservedBy": "Reserved by",
+    "reserveTable": "Reserve Table",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "date": "Date",
+    "time": "Time",
+    "cancel": "Cancel",
+    "reserve": "Reserve"
+  },
+  "menu": {
+    "title": "Our Menu",
+    "all": "All",
+    "appetizer": "Appetizers",
+    "main": "Main Courses",
+    "dessert": "Desserts",
+    "drink": "Drinks"
+  },
+  "order": {
+    "title": "Order Online",
+    "subtitle": "Select your dishes and place your order for pickup.",
+    "successMessage": "Order successfully placed! We are preparing your order.",
+    "menuTitle": "Menu",
+    "addToCart": "Add",
+    "cart": "Cart",
+    "cartEmpty": "Your cart is empty",
+    "total": "Total",
+    "customerName": "Name",
+    "customerEmail": "Email",
+    "paymentMethod": "Payment Method",
+    "cash": "Cash on Pickup",
+    "swipe": "Card Payment (Swipe)",
+    "paypal": "PayPal",
+    "placeOrder": "Place Order"
+  },
+  "footer": {
+    "copyright": "© 2025 Restaurant Name. All rights reserved."
+  }
+}

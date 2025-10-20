@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menü",
+    "reservations": "Reservierung",
+    "order": "Bestellen"
+  },
+  "home": {
+    "title": "Willkommen in unserem Restaurant",
+    "subtitle": "Genießen Sie erstklassige Küche in gemütlicher Atmosphäre",
+    "reserveButton": "Tisch reservieren",
+    "menuButton": "Menü ansehen",
+    "ourMenu": "Unsere Speisekarte",
+    "ourMenuDesc": "Entdecken Sie unsere vielfältige Auswahl an köstlichen Gerichten",
+    "tableReservation": "Tischreservierung",
+    "tableReservationDesc": "Reservieren Sie Ihren Tisch in Echtzeit und sehen Sie verfügbare Plätze",
+    "onlineOrder": "Online bestellen",
+    "onlineOrderDesc": "Bestellen Sie bequem online zur Abholung mit verschiedenen Zahlungsmethoden"
+  },
+  "reservations": {
+    "title": "Tischreservierung",
+    "subtitle": "Wählen Sie einen verfügbaren Tisch aus. Reservierungen werden in Echtzeit aktualisiert.",
+    "table": "Tisch",
+    "persons": "Personen",
+    "available": "Verfügbar",
+    "reserved": "Reserviert",
+    "reservedBy": "Reserviert von",
+    "reserveTable": "reservieren",
+    "name": "Name",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "date": "Datum",
+    "time": "Uhrzeit",
+    "cancel": "Abbrechen",
+    "reserve": "Reservieren"
+  },
+  "menu": {
+    "title": "Unsere Speisekarte",
+    "all": "Alle",
+    "appetizer": "Vorspeisen",
+    "main": "Hauptgerichte",
+    "dessert": "Desserts",
+    "drink": "Getränke"
+  },
+  "order": {
+    "title": "Online Bestellen",
+    "subtitle": "Wählen Sie Ihre Gerichte und geben Sie Ihre Bestellung zur Abholung auf.",
+    "successMessage": "Bestellung erfolgreich aufgegeben! Wir bereiten Ihre Bestellung vor.",
+    "menuTitle": "Menü",
+    "addToCart": "Hinzufügen",
+    "cart": "Warenkorb",
+    "cartEmpty": "Ihr Warenkorb ist leer",
+    "total": "Gesamt",
+    "customerName": "Name",
+    "customerEmail": "E-Mail",
+    "paymentMethod": "Zahlungsmethode",
+    "cash": "Barzahlung bei Abholung",
+    "swipe": "Kartenzahlung (Swipe)",
+    "paypal": "PayPal",
+    "placeOrder": "Bestellung aufgeben"
+  },
+  "footer": {
+    "copyright": "© 2025 Restaurant Name. Alle Rechte vorbehalten."
+  }
+}
