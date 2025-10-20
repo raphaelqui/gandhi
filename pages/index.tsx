@@ -43,28 +43,7 @@ export default function Home() {
               justifyContent: "center",
               alignItems: "center",
             }}
-          >
-            <Box sx={{ textAlign: "center", mb: 6 }}>
-              <Typography variant="h2" component="h1" gutterBottom>
-                {t("home.title")}
-              </Typography>
-              <Typography variant="h5" color="text.secondary" paragraph>
-                {t("home.subtitle")}
-              </Typography>
-              <Box sx={{ mt: 4 }}>
-                <Link href="/reservations" passHref>
-                  <Button variant="contained" size="large" sx={{ mr: 2 }}>
-                    {t("home.reserveButton")}
-                  </Button>
-                </Link>
-                <Link href="/menu" passHref>
-                  <Button variant="outlined" size="large">
-                    {t("home.menuButton")}
-                  </Button>
-                </Link>
-              </Box>
-            </Box>
-          </Stack>
+          ></Stack>
         </SwipeXYElement>
 
         {/* Slide 2 - Menü */}
@@ -72,7 +51,7 @@ export default function Home() {
           <Stack
             sx={{
               width: "100%",
-              minHeight: "100vh",
+              minHeight: "2000px",
               background: "linear-gradient(to top, #FAFFD1, #A1FFCE)",
               display: "flex",
               justifyContent: "center",
