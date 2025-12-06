@@ -13,7 +13,10 @@ export const SwipeXYControl: React.FC<SwipeXYControlProps> = ({
   children,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [currentX, currentY] = xy.split("/").map(Number);
+  // xy can have an optional flag suffix like "0/2|top" to indicate
+  // special behavior (e.g. reset inner scroll to top when navigating).
+  const [coordsPart, flagPart] = xy.split("|");
+  const [currentX, currentY] = coordsPart.split("/").map(Number);
   const isScrollingRef = useRef(false);
   const touchStartYRef = useRef(0);
   const scrollDirectionRef = useRef<"up" | "down" | null>(null);
@@ -70,6 +73,26 @@ export const SwipeXYControl: React.FC<SwipeXYControlProps> = ({
   // Reagiere auf xy-Änderungen (z.B. durch Navbar)
   useEffect(() => {
     scrollToSlide(currentY, scrollDirectionRef.current);
+
+    if (flagPart === "top") {
+      const slide = containerRef.current?.children[currentY] as
+        | HTMLElement
+        | undefined;
+      const inner = slide?.querySelector(".swipe-slide-inner") as
+        | HTMLElement
+        | null
+        | undefined;
+      if (inner) {
+        // Wait for the container to finish its smooth scroll animation
+        setTimeout(() => {
+          try {
+            inner.scrollTop = 0;
+          } catch (err) {
+            // ignore
+          }
+        }, 350);
+      }
+    }
   }, [currentY]);
 
   // Wheel Event Handler

@@ -7,10 +7,6 @@ interface SwipeXYElementProps extends HTMLAttributes<HTMLDivElement> {
   startX?: boolean;
 }
 
-// Each slide gets its own inner scroll container. The container has
-// overflow-y:auto and fills the viewport. The parent control will
-// detect whether this inner container can scroll further and will
-// only change slides when the inner scroll reaches its end.
 export const SwipeXYElement: React.FC<SwipeXYElementProps> = ({
   children,
   style,

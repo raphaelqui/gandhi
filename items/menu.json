@@ -1,0 +1,1137 @@
+{
+  "restaurant": {
+    "id": "rest_001",
+    "name": "Taj Mahal Restaurant",
+    "cuisine": "Indisch",
+    "währung": "EUR",
+    "steuersatz": 19,
+    "sprachen": ["de", "en"],
+    "kontakt": {
+      "telefon": "+49 228 12345678",
+      "email": "info@tajmahal-bonn.de",
+      "website": "www.tajmahal-bonn.de"
+    },
+    "adresse": {
+      "straße": "Musterstraße 123",
+      "plz": "53111",
+      "stadt": "Bonn",
+      "land": "Deutschland",
+      "koordinaten": {
+        "latitude": 50.7374,
+        "longitude": 7.0982
+      }
+    },
+    "öffnungszeiten": {
+      "montag": { "geöffnet": true, "zeiten": ["11:30-14:30", "17:30-23:00"] },
+      "dienstag": {
+        "geöffnet": true,
+        "zeiten": ["11:30-14:30", "17:30-23:00"]
+      },
+      "mittwoch": {
+        "geöffnet": true,
+        "zeiten": ["11:30-14:30", "17:30-23:00"]
+      },
+      "donnerstag": {
+        "geöffnet": true,
+        "zeiten": ["11:30-14:30", "17:30-23:00"]
+      },
+      "freitag": { "geöffnet": true, "zeiten": ["11:30-14:30", "17:30-00:00"] },
+      "samstag": { "geöffnet": true, "zeiten": ["12:00-00:00"] },
+      "sonntag": { "geöffnet": true, "zeiten": ["12:00-23:00"] }
+    },
+    "bestelleinstellungen": {
+      "online_bestellung_aktiv": true,
+      "abholung_aktiv": true,
+      "lieferung_aktiv": true,
+      "tischreservierung_aktiv": true,
+      "vorbestellung_möglich": true,
+      "vorbestellung_max_tage": 7,
+      "mindestbestellwert_lieferung": 15.0,
+      "mindestbestellwert_abholung": 0.0,
+      "liefergebühr": 2.5,
+      "liefergebühr_frei_ab": 40.0,
+      "durchschnittliche_zubereitungszeit_min": 30,
+      "durchschnittliche_lieferzeit_min": 45,
+      "max_lieferradius_km": 5,
+      "verpackungskosten_pro_gericht": 0.5,
+      "trinkgeld_vorschläge_prozent": [0, 5, 10, 15],
+      "akzeptierte_zahlungsmethoden": [
+        {
+          "id": "cash",
+          "name": "Barzahlung",
+          "name_en": "Cash",
+          "typ": "bar",
+          "aktiv": true,
+          "nur_bei_abholung": false,
+          "gebühr": 0
+        },
+        {
+          "id": "card",
+          "name": "Kartenzahlung",
+          "name_en": "Card Payment",
+          "typ": "karte",
+          "aktiv": true,
+          "nur_bei_abholung": false,
+          "gebühr": 0
+        },
+        {
+          "id": "paypal",
+          "name": "PayPal",
+          "typ": "online",
+          "aktiv": true,
+          "nur_bei_abholung": false,
+          "gebühr": 0
+        },
+        {
+          "id": "klarna",
+          "name": "Klarna",
+          "typ": "online",
+          "aktiv": true,
+          "nur_bei_abholung": false,
+          "gebühr": 0
+        }
+      ],
+      "gutscheine_aktiv": true,
+      "treueprogramm_aktiv": true,
+      "punkte_pro_euro": 10
+    }
+  },
+  "kategorien": [
+    {
+      "id": "vorspeisen",
+      "name": "Vorspeisen",
+      "name_en": "Appetizers",
+      "beschreibung": "Traditionelle indische Appetithäppchen",
+      "beschreibung_en": "Traditional Indian appetizers",
+      "reihenfolge": 1,
+      "verfügbar": true,
+      "bild_url": "/images/kategorien/vorspeisen.jpg",
+      "unterkategorien": [
+        {
+          "id": "suppen",
+          "name": "Suppen",
+          "name_en": "Soups",
+          "beschreibung": "Würzige indische Suppen",
+          "beschreibung_en": "Spicy Indian soups",
+          "reihenfolge": 1,
+          "gerichte": [
+            {
+              "id": "sup_001",
+              "nummer": "1",
+              "sku": "TAJ-SUP-001",
+              "name": "Mulligatawny Suppe",
+              "name_en": "Mulligatawny Soup",
+              "beschreibung": "Traditionelle indische Linsensuppe mit Gemüse und aromatischen Gewürzen",
+              "beschreibung_en": "Traditional Indian lentil soup with vegetables and aromatic spices",
+              "kurzbeschreibung": "Würzige Linsensuppe",
+              "preis": 5.9,
+              "währung": "EUR",
+              "steuersatz": 19,
+              "portionsgröße": "250ml",
+              "kalorien": 180,
+              "zubereitungszeit_min": 15,
+              "verfügbar": true,
+              "auf_lager": true,
+              "lagerbestand": null,
+              "verfügbarkeit": {
+                "ganztägig": true,
+                "mittagsmenü": true,
+                "abendkarte": true,
+                "wochentage": [
+                  "montag",
+                  "dienstag",
+                  "mittwoch",
+                  "donnerstag",
+                  "freitag",
+                  "samstag",
+                  "sonntag"
+                ]
+              },
+              "schärfegrad": 1,
+              "schärfe_max": 5,
+              "schärfe_anpassbar": true,
+              "bild_url": "/images/gerichte/mulligatawny.jpg",
+              "bilder": [
+                "/images/gerichte/mulligatawny_1.jpg",
+                "/images/gerichte/mulligatawny_2.jpg"
+              ],
+              "allergene": ["Sellerie", "Glutenhaltige Getreide"],
+              "allergene_codes": ["L", "A"],
+              "zusatzstoffe": [],
+              "ernährungsformen": {
+                "vegetarisch": true,
+                "vegan": true,
+                "glutenfrei": false,
+                "laktosefrei": true,
+                "halal": true,
+                "bio": false,
+                "regional": false
+              },
+              "zutaten": [
+                "Rote Linsen",
+                "Karotten",
+                "Sellerie",
+                "Tomaten",
+                "Kokosmilch",
+                "Curryblätter",
+                "Kurkuma",
+                "Kreuzkümmel",
+                "Koriander"
+              ],
+              "hauptzutaten": ["Rote Linsen", "Kokosmilch"],
+              "nährwerte_pro_portion": {
+                "kalorien": 180,
+                "fett_g": 8,
+                "davon_gesättigt_g": 6,
+                "kohlenhydrate_g": 22,
+                "davon_zucker_g": 4,
+                "ballaststoffe_g": 5,
+                "eiweiß_g": 6,
+                "salz_g": 1.2
+              },
+              "empfehlungen": ["Als Vorspeise", "Perfekt für kalte Tage"],
+              "beliebtheit": 4.5,
+              "bewertungen_anzahl": 127,
+              "bewertungen_durchschnitt": 4.5,
+              "tags": ["Klassiker", "Comfort Food", "Gesund"],
+              "modifikatoren": [
+                {
+                  "id": "mod_schaerfe",
+                  "name": "Schärfegrad",
+                  "name_en": "Spice Level",
+                  "typ": "auswahl_einzeln",
+                  "pflicht": false,
+                  "standardwert": "mittel",
+                  "optionen": [
+                    {
+                      "id": "mild",
+                      "name": "Mild",
+                      "name_en": "Mild",
+                      "aufpreis": 0
+                    },
+                    {
+                      "id": "mittel",
+                      "name": "Mittel",
+                      "name_en": "Medium",
+                      "aufpreis": 0
+                    },
+                    {
+                      "id": "scharf",
+                      "name": "Scharf",
+                      "name_en": "Hot",
+                      "aufpreis": 0
+                    },
+                    {
+                      "id": "extra_scharf",
+                      "name": "Extra Scharf",
+                      "name_en": "Extra Hot",
+                      "aufpreis": 0
+                    }
+                  ]
+                }
+              ],
+              "für_bestellung_verfügbar": true,
+              "min_bestellmenge": 1,
+              "max_bestellmenge": 10,
+              "mengenrabatt": []
+            }
+          ]
+        },
+        {
+          "id": "samosas",
+          "name": "Samosas & Pakoras",
+          "name_en": "Samosas & Pakoras",
+          "beschreibung": "Frittierte Teigtaschen und Gemüse",
+          "beschreibung_en": "Fried pastries and vegetables",
+          "reihenfolge": 2,
+          "gerichte": [
+            {
+              "id": "vor_002",
+              "nummer": "2",
+              "sku": "TAJ-VOR-002",
+              "name": "Gemüse Samosa",
+              "name_en": "Vegetable Samosa",
+              "beschreibung": "Knusprige Teigtaschen gefüllt mit gewürzten Kartoffeln, Erbsen und indischen Gewürzen, serviert mit Tamarinden-Chutney",
+              "beschreibung_en": "Crispy pastry filled with spiced potatoes, peas and Indian spices, served with tamarind chutney",
+              "kurzbeschreibung": "Knusprige Teigtaschen mit Kartoffelfüllung",
+              "preis": 6.5,
+              "preis_basis": "2_stueck",
+              "preis_optionen": [
+                {
+                  "id": "2_stueck",
+                  "variante": "2 Stück",
+                  "variante_en": "2 Pieces",
+                  "preis": 6.5,
+                  "standard": true
+                },
+                {
+                  "id": "4_stueck",
+                  "variante": "4 Stück",
+                  "variante_en": "4 Pieces",
+                  "preis": 11.9,
+                  "standard": false
+                }
+              ],
+              "währung": "EUR",
+              "steuersatz": 19,
+              "portionsgröße": "2 Stück à ca. 80g",
+              "kalorien": 290,
+              "zubereitungszeit_min": 20,
+              "verfügbar": true,
+              "auf_lager": true,
+              "lagerbestand": null,
+              "verfügbarkeit": {
+                "ganztägig": true,
+                "mittagsmenü": true,
+                "abendkarte": true,
+                "wochentage": [
+                  "montag",
+                  "dienstag",
+                  "mittwoch",
+                  "donnerstag",
+                  "freitag",
+                  "samstag",
+                  "sonntag"
+                ]
+              },
+              "schärfegrad": 2,
+              "schärfe_max": 5,
+              "schärfe_anpassbar": true,
+              "bild_url": "/images/gerichte/samosa.jpg",
+              "bilder": [
+                "/images/gerichte/samosa_1.jpg",
+                "/images/gerichte/samosa_2.jpg"
+              ],
+              "allergene": ["Glutenhaltige Getreide", "Senf"],
+              "allergene_codes": ["A", "M"],
+              "zusatzstoffe": [],
+              "ernährungsformen": {
+                "vegetarisch": true,
+                "vegan": true,
+                "glutenfrei": false,
+                "laktosefrei": true,
+                "halal": true,
+                "bio": false,
+                "regional": false
+              },
+              "zutaten": [
+                "Weizenmehl",
+                "Kartoffeln",
+                "Erbsen",
+                "Zwiebeln",
+                "Ingwer",
+                "Knoblauch",
+                "Garam Masala",
+                "Kreuzkümmel",
+                "Koriander",
+                "Chili",
+                "Tamarinden-Chutney",
+                "Minz-Chutney"
+              ],
+              "hauptzutaten": ["Kartoffeln", "Erbsen", "Weizenmehl"],
+              "nährwerte_pro_portion": {
+                "portionsgröße": "2 Stück",
+                "kalorien": 290,
+                "fett_g": 14,
+                "davon_gesättigt_g": 2,
+                "kohlenhydrate_g": 35,
+                "davon_zucker_g": 3,
+                "ballaststoffe_g": 4,
+                "eiweiß_g": 6,
+                "salz_g": 1.5
+              },
+              "beilagen_inklusive": [
+                { "name": "Tamarinden-Chutney", "name_en": "Tamarind Chutney" },
+                { "name": "Minz-Chutney", "name_en": "Mint Chutney" }
+              ],
+              "beilagen_optional": [],
+              "empfehlungen": ["Bestseller", "Party-Snack"],
+              "beliebtheit": 4.8,
+              "bewertungen_anzahl": 342,
+              "bewertungen_durchschnitt": 4.8,
+              "tags": ["Bestseller", "Knusprig", "Streetfood", "Vegan"],
+              "modifikatoren": [
+                {
+                  "id": "mod_schaerfe",
+                  "name": "Schärfegrad",
+                  "name_en": "Spice Level",
+                  "typ": "auswahl_einzeln",
+                  "pflicht": false,
+                  "standardwert": "mittel",
+                  "optionen": [
+                    {
+                      "id": "mild",
+                      "name": "Mild",
+                      "name_en": "Mild",
+                      "aufpreis": 0
+                    },
+                    {
+                      "id": "mittel",
+                      "name": "Mittel",
+                      "name_en": "Medium",
+                      "aufpreis": 0
+                    },
+                    {
+                      "id": "scharf",
+                      "name": "Scharf",
+                      "name_en": "Hot",
+                      "aufpreis": 0
+                    }
+                  ]
+                },
+                {
+                  "id": "mod_portion",
+                  "name": "Portionsgröße",
+                  "name_en": "Portion Size",
+                  "typ": "auswahl_einzeln",
+                  "pflicht": true,
+                  "standardwert": "2_stueck",
+                  "optionen": [
+                    {
+                      "id": "2_stueck",
+                      "name": "2 Stück",
+                      "name_en": "2 Pieces",
+                      "aufpreis": 0
+                    },
+                    {
+                      "id": "4_stueck",
+                      "name": "4 Stück",
+                      "name_en": "4 Pieces",
+                      "aufpreis": 5.4
+                    }
+                  ]
+                },
+                {
+                  "id": "mod_extras",
+                  "name": "Extras",
+                  "name_en": "Extras",
+                  "typ": "auswahl_mehrfach",
+                  "pflicht": false,
+                  "min_auswahl": 0,
+                  "max_auswahl": 3,
+                  "optionen": [
+                    {
+                      "id": "ohne_zwiebeln",
+                      "name": "Ohne Zwiebeln",
+                      "name_en": "No Onions",
+                      "aufpreis": 0
+                    },
+                    {
+                      "id": "extra_chutney",
+                      "name": "Extra Chutney",
+                      "name_en": "Extra Chutney",
+                      "aufpreis": 1.5
+                    }
+                  ]
+                }
+              ],
+              "für_bestellung_verfügbar": true,
+              "min_bestellmenge": 1,
+              "max_bestellmenge": 20,
+              "mengenrabatt": [
+                {
+                  "ab_menge": 5,
+                  "rabatt_prozent": 10,
+                  "beschreibung": "10% Rabatt ab 5 Portionen"
+                }
+              ],
+              "kombinationsangebote": [
+                {
+                  "id": "combo_samosa_lassi",
+                  "name": "Samosa + Mango Lassi",
+                  "artikel_ids": ["vor_002", "get_001"],
+                  "kombinations_preis": 9.9,
+                  "ersparnis": 1.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hauptgerichte",
+      "name": "Hauptgerichte",
+      "name_en": "Main Courses",
+      "beschreibung": "Authentische indische Spezialitäten",
+      "beschreibung_en": "Authentic Indian specialties",
+      "reihenfolge": 2,
+      "verfügbar": true,
+      "bild_url": "/images/kategorien/hauptgerichte.jpg",
+      "unterkategorien": [
+        {
+          "id": "curry_vegan",
+          "name": "Vegane Currys",
+          "name_en": "Vegan Curries",
+          "beschreibung": "Rein pflanzliche Curry-Gerichte",
+          "beschreibung_en": "Plant-based curry dishes",
+          "reihenfolge": 1,
+          "gerichte": [
+            {
+              "id": "cur_003",
+              "nummer": "15",
+              "sku": "TAJ-CUR-003",
+              "name": "Chana Masala",
+              "name_en": "Chana Masala",
+              "beschreibung": "Kichererbsen in würziger Tomaten-Zwiebel-Sauce mit Ingwer, Knoblauch und traditionellen indischen Gewürzen, serviert mit Basmati-Reis",
+              "beschreibung_en": "Chickpeas in spicy tomato-onion sauce with ginger, garlic and traditional Indian spices, served with basmati rice",
+              "kurzbeschreibung": "Würziges Kichererbsen-Curry mit Reis",
+              "preis": 13.9,
+              "währung": "EUR",
+              "steuersatz": 19,
+              "portionsgröße": "400g",
+              "kalorien": 420,
+              "zubereitungszeit_min": 25,
+              "verfügbar": true,
+              "auf_lager": true,
+              "lagerbestand": null,
+              "verfügbarkeit": {
+                "ganztägig": true,
+                "mittagsmenü": true,
+                "abendkarte": true,
+                "wochentage": [
+                  "montag",
+                  "dienstag",
+                  "mittwoch",
+                  "donnerstag",
+                  "freitag",
+                  "samstag",
+                  "sonntag"
+                ]
+              },
+              "schärfegrad": 3,
+              "schärfe_max": 5,
+              "schärfe_anpassbar": true,
+              "bild_url": "/images/gerichte/chana-masala.jpg",
+              "bilder": [
+                "/images/gerichte/chana-masala_1.jpg",
+                "/images/gerichte/chana-masala_2.jpg"
+              ],
+              "allergene": [],
+              "allergene_codes": [],
+              "zusatzstoffe": [],
+              "ernährungsformen": {
+                "vegetarisch": true,
+                "vegan": true,
+                "glutenfrei": true,
+                "laktosefrei": true,
+                "halal": true,
+                "bio": false,
+                "regional": false
+              },
+              "zutaten": [
+                "Kichererbsen",
+                "Tomaten",
+                "Zwiebeln",
+                "Ingwer",
+                "Knoblauch",
+                "Garam Masala",
+                "Kurkuma",
+                "Kreuzkümmel",
+                "Koriander",
+                "Chili",
+                "Basmati-Reis",
+                "Koriander frisch"
+              ],
+              "hauptzutaten": ["Kichererbsen", "Tomaten", "Basmati-Reis"],
+              "nährwerte_pro_portion": {
+                "portionsgröße": "400g",
+                "kalorien": 420,
+                "fett_g": 12,
+                "davon_gesättigt_g": 1.5,
+                "kohlenhydrate_g": 62,
+                "davon_zucker_g": 8,
+                "ballaststoffe_g": 14,
+                "eiweiß_g": 16,
+                "salz_g": 2.1
+              },
+              "beilagen_inklusive": [
+                {
+                  "name": "Basmati-Reis",
+                  "name_en": "Basmati Rice",
+                  "menge": "200g"
+                }
+              ],
+              "beilagen_optional": [
+                {
+                  "id": "beil_naan",
+                  "name": "Naan-Brot",
+                  "name_en": "Naan Bread",
+                  "aufpreis": 3.5,
+                  "verfügbar": true
+                },
+                {
+                  "id": "beil_knoblauch_naan",
+                  "name": "Knoblauch-Naan",
+                  "name_en": "Garlic Naan",
+                  "aufpreis": 4.2,
+                  "verfügbar": true
+                },
+                {
+                  "id": "beil_papadam",
+                  "name": "Papadam (2 Stück)",
+                  "name_en": "Papadam (2 Pieces)",
+                  "aufpreis": 2.5,
+                  "verfügbar": true
+                }
+              ],
+              "empfehlungen": ["Proteinreich", "Vegan-Favorit", "Gesund"],
+              "beliebtheit": 4.7,
+              "bewertungen_anzahl": 218,
+              "bewertungen_durchschnitt": 4.7,
+              "tags": ["Vegan", "Proteinreich", "Klassiker", "Gesund"],
+              "kombination_mit": ["Naan-Brot", "Mango Lassi"],
+              "modifikatoren": [
+                {
+                  "id": "mod_schaerfe",
+                  "name": "Schärfegrad",
+                  "name_en": "Spice Level",
+                  "typ": "auswahl_einzeln",
+                  "pflicht": false,
+                  "standardwert": "scharf",
+                  "optionen": [
+                    {
+                      "id": "mild",
+                      "name": "Mild",
+                      "name_en": "Mild",
+                      "aufpreis": 0
+                    },
+                    {
+                      "id": "mittel",
+                      "name": "Mittel",
+                      "name_en": "Medium",
+                      "aufpreis": 0
+                    },
+                    {
+                      "id": "scharf",
+                      "name": "Scharf",
+                      "name_en": "Hot",
+                      "aufpreis": 0
+                    },
+                    {
+                      "id": "extra_scharf",
+                      "name": "Extra Scharf",
+                      "name_en": "Extra Hot",
+                      "aufpreis": 0
+                    }
+                  ]
+                },
+                {
+                  "id": "mod_reis",
+                  "name": "Reis-Option",
+                  "name_en": "Rice Option",
+                  "typ": "auswahl_einzeln",
+                  "pflicht": false,
+                  "standardwert": "normal",
+                  "optionen": [
+                    {
+                      "id": "normal",
+                      "name": "Normaler Reis",
+                      "name_en": "Regular Rice",
+                      "aufpreis": 0
+                    },
+                    {
+                      "id": "extra",
+                      "name": "Extra Reis",
+                      "name_en": "Extra Rice",
+                      "aufpreis": 2.5
+                    },
+                    {
+                      "id": "ohne",
+                      "name": "Ohne Reis",
+                      "name_en": "Without Rice",
+                      "aufpreis": -2.0
+                    }
+                  ]
+                },
+                {
+                  "id": "mod_extras",
+                  "name": "Extras",
+                  "name_en": "Extras",
+                  "typ": "auswahl_mehrfach",
+                  "pflicht": false,
+                  "min_auswahl": 0,
+                  "max_auswahl": 5,
+                  "optionen": [
+                    {
+                      "id": "extra_gemüse",
+                      "name": "Extra Gemüse",
+                      "name_en": "Extra Vegetables",
+                      "aufpreis": 2.0
+                    },
+                    {
+                      "id": "ohne_koriander",
+                      "name": "Ohne Koriander",
+                      "name_en": "No Cilantro",
+                      "aufpreis": 0
+                    },
+                    {
+                      "id": "extra_sauce",
+                      "name": "Extra Sauce",
+                      "name_en": "Extra Sauce",
+                      "aufpreis": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "mod_beilagen",
+                  "name": "Brot hinzufügen",
+                  "name_en": "Add Bread",
+                  "typ": "auswahl_mehrfach",
+                  "pflicht": false,
+                  "min_auswahl": 0,
+                  "max_auswahl": 3,
+                  "optionen": [
+                    {
+                      "id": "naan",
+                      "name": "Naan-Brot",
+                      "name_en": "Naan Bread",
+                      "aufpreis": 3.5
+                    },
+                    {
+                      "id": "knoblauch_naan",
+                      "name": "Knoblauch-Naan",
+                      "name_en": "Garlic Naan",
+                      "aufpreis": 4.2
+                    },
+                    {
+                      "id": "papadam",
+                      "name": "Papadam (2 Stück)",
+                      "name_en": "Papadam (2 Pieces)",
+                      "aufpreis": 2.5
+                    }
+                  ]
+                }
+              ],
+              "für_bestellung_verfügbar": true,
+              "min_bestellmenge": 1,
+              "max_bestellmenge": 10,
+              "mengenrabatt": [],
+              "mittagsangebot": {
+                "aktiv": true,
+                "preis": 11.9,
+                "verfügbar_von": "11:30",
+                "verfügbar_bis": "14:30",
+                "wochentage": [
+                  "montag",
+                  "dienstag",
+                  "mittwoch",
+                  "donnerstag",
+                  "freitag"
+                ],
+                "inklusive": ["Basmati-Reis", "Salat", "Papadam"]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "getränke",
+      "name": "Getränke",
+      "name_en": "Beverages",
+      "beschreibung": "Erfrischende Getränke und Lassis",
+      "beschreibung_en": "Refreshing drinks and lassis",
+      "reihenfolge": 3,
+      "verfügbar": true,
+      "bild_url": "/images/kategorien/getraenke.jpg",
+      "unterkategorien": [
+        {
+          "id": "lassi",
+          "name": "Lassi",
+          "name_en": "Lassi",
+          "beschreibung": "Traditionelle indische Joghurt-Getränke",
+          "beschreibung_en": "Traditional Indian yogurt drinks",
+          "reihenfolge": 1,
+          "gerichte": [
+            {
+              "id": "get_001",
+              "nummer": "50",
+              "sku": "TAJ-GET-001",
+              "name": "Mango Lassi",
+              "name_en": "Mango Lassi",
+              "beschreibung": "Cremiges Joghurt-Getränk mit frischen Mangos und einem Hauch Kardamom",
+              "beschreibung_en": "Creamy yogurt drink with fresh mangoes and a hint of cardamom",
+              "kurzbeschreibung": "Joghurt-Getränk mit Mango",
+              "preis": 3.9,
+              "preis_basis": "300ml",
+              "preis_optionen": [
+                {
+                  "id": "300ml",
+                  "variante": "0,3l",
+                  "variante_en": "0.3l",
+                  "preis": 3.9,
+                  "standard": true
+                },
+                {
+                  "id": "500ml",
+                  "variante": "0,5l",
+                  "variante_en": "0.5l",
+                  "preis": 5.9,
+                  "standard": false
+                }
+              ],
+              "währung": "EUR",
+              "steuersatz": 19,
+              "portionsgröße": "300ml",
+              "kalorien": 180,
+              "zubereitungszeit_min": 5,
+              "verfügbar": true,
+              "auf_lager": true,
+              "lagerbestand": null,
+              "verfügbarkeit": {
+                "ganztägig": true,
+                "mittagsmenü": true,
+                "abendkarte": true,
+                "wochentage": [
+                  "montag",
+                  "dienstag",
+                  "mittwoch",
+                  "donnerstag",
+                  "freitag",
+                  "samstag",
+                  "sonntag"
+                ]
+              },
+              "schärfegrad": 0,
+              "schärfe_max": 5,
+              "schärfe_anpassbar": false,
+              "bild_url": "/images/gerichte/mango-lassi.jpg",
+              "bilder": ["/images/gerichte/mango-lassi_1.jpg"],
+              "allergene": ["Milch und Milchprodukte"],
+              "allergene_codes": ["G"],
+              "zusatzstoffe": [],
+              "ernährungsformen": {
+                "vegetarisch": true,
+                "vegan": false,
+                "glutenfrei": true,
+                "laktosefrei": false,
+                "halal": true,
+                "bio": false,
+                "regional": false
+              },
+              "zutaten": ["Joghurt", "Mango", "Milch", "Zucker", "Kardamom"],
+              "hauptzutaten": ["Joghurt", "Mango"],
+              "nährwerte_pro_portion": {
+                "portionsgröße": "300ml",
+                "kalorien": 180,
+                "fett_g": 4,
+                "davon_gesättigt_g": 2.5,
+                "kohlenhydrate_g": 30,
+                "davon_zucker_g": 28,
+                "ballaststoffe_g": 1,
+                "eiweiß_g": 5,
+                "salz_g": 0.2
+              },
+              "empfehlungen": ["Perfekt zu scharfen Gerichten", "Erfrischend"],
+              "beliebtheit": 4.9,
+              "bewertungen_anzahl": 456,
+              "bewertungen_durchschnitt": 4.9,
+              "tags": ["Bestseller", "Erfrischend", "Süß"],
+              "modifikatoren": [
+                {
+                  "id": "mod_groesse",
+                  "name": "Größe",
+                  "name_en": "Size",
+                  "typ": "auswahl_einzeln",
+                  "pflicht": true,
+                  "standardwert": "300ml",
+                  "optionen": [
+                    {
+                      "id": "300ml",
+                      "name": "0,3l",
+                      "name_en": "0.3l",
+                      "aufpreis": 0
+                    },
+                    {
+                      "id": "500ml",
+                      "name": "0,5l",
+                      "name_en": "0.5l",
+                      "aufpreis": 2.0
+                    }
+                  ]
+                },
+                {
+                  "id": "mod_zucker",
+                  "name": "Süße",
+                  "name_en": "Sweetness",
+                  "typ": "auswahl_einzeln",
+                  "pflicht": false,
+                  "standardwert": "normal",
+                  "optionen": [
+                    {
+                      "id": "weniger_süß",
+                      "name": "Weniger süß",
+                      "name_en": "Less Sweet",
+                      "aufpreis": 0
+                    },
+                    {
+                      "id": "normal",
+                      "name": "Normal",
+                      "name_en": "Regular",
+                      "aufpreis": 0
+                    },
+                    {
+                      "id": "extra_süß",
+                      "name": "Extra süß",
+                      "name_en": "Extra Sweet",
+                      "aufpreis": 0
+                    }
+                  ]
+                }
+              ],
+              "für_bestellung_verfügbar": true,
+              "min_bestellmenge": 1,
+              "max_bestellmenge": 10,
+              "mengenrabatt": [],
+              "pfand": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "menü_einstellungen": {
+    "aktiv": true,
+    "version": "1.0.0",
+    "letzte_aktualisierung": "2025-10-31T10:00:00Z",
+    "gültig_ab": "2025-10-31T00:00:00Z",
+    "gültig_bis": null,
+    "währung": "EUR",
+    "steuersätze": {
+      "standard": 19,
+      "ermäßigt": 7
+    }
+  },
+  "bestellung_beispiel": {
+    "bestellung_id": "ORD-2025-10-31-001234",
+    "bestell_nummer": "1234",
+    "bestelldatum": "2025-10-31T18:30:00Z",
+    "status": "in_bearbeitung",
+    "status_historie": [
+      {
+        "status": "eingegangen",
+        "zeitstempel": "2025-10-31T18:30:00Z",
+        "notiz": "Bestellung eingegangen"
+      },
+      {
+        "status": "bestätigt",
+        "zeitstempel": "2025-10-31T18:31:00Z",
+        "notiz": "Bestellung vom Restaurant bestätigt"
+      },
+      {
+        "status": "in_bearbeitung",
+        "zeitstempel": "2025-10-31T18:35:00Z",
+        "notiz": "Zubereitung hat begonnen"
+      }
+    ],
+    "bestelltyp": "lieferung",
+    "kunde": {
+      "kunden_id": "CUST-2025-001",
+      "vorname": "Max",
+      "nachname": "Mustermann",
+      "email": "max.mustermann@example.com",
+      "telefon": "+49 171 1234567",
+      "adresse": {
+        "straße": "Beispielstraße 45",
+        "hausnummer": "45",
+        "zusatz": "2. OG links",
+        "plz": "53113",
+        "stadt": "Bonn",
+        "land": "Deutschland",
+        "koordinaten": {
+          "latitude": 50.735,
+          "longitude": 7.101
+        }
+      },
+      "lieferanweisungen": "Bitte klingeln bei Müller, 2. OG",
+      "registriert": true,
+      "treuepunkte": 450
+    },
+    "artikel": [
+      {
+        "position": 1,
+        "artikel_id": "vor_002",
+        "sku": "TAJ-VOR-002",
+        "name": "Gemüse Samosa",
+        "menge": 1,
+        "einzelpreis": 6.5,
+        "ausgewählte_variante": {
+          "id": "2_stueck",
+          "name": "2 Stück",
+          "aufpreis": 0
+        },
+        "modifikatoren": [
+          {
+            "modifikator_id": "mod_schaerfe",
+            "name": "Schärfegrad",
+            "ausgewählt": [
+              {
+                "id": "mittel",
+                "name": "Mittel",
+                "aufpreis": 0
+              }
+            ]
+          },
+          {
+            "modifikator_id": "mod_extras",
+            "name": "Extras",
+            "ausgewählt": [
+              {
+                "id": "extra_chutney",
+                "name": "Extra Chutney",
+                "aufpreis": 1.5
+              }
+            ]
+          }
+        ],
+        "zwischensumme": 8.0,
+        "steuersatz": 19,
+        "steuer": 1.28,
+        "spezielle_wünsche": "Bitte extra knusprig"
+      },
+      {
+        "position": 2,
+        "artikel_id": "cur_003",
+        "sku": "TAJ-CUR-003",
+        "name": "Chana Masala",
+        "menge": 2,
+        "einzelpreis": 13.9,
+        "modifikatoren": [
+          {
+            "modifikator_id": "mod_schaerfe",
+            "name": "Schärfegrad",
+            "ausgewählt": [
+              {
+                "id": "scharf",
+                "name": "Scharf",
+                "aufpreis": 0
+              }
+            ]
+          },
+          {
+            "modifikator_id": "mod_reis",
+            "name": "Reis-Option",
+            "ausgewählt": [
+              {
+                "id": "extra",
+                "name": "Extra Reis",
+                "aufpreis": 2.5
+              }
+            ]
+          },
+          {
+            "modifikator_id": "mod_beilagen",
+            "name": "Brot hinzufügen",
+            "ausgewählt": [
+              {
+                "id": "knoblauch_naan",
+                "name": "Knoblauch-Naan",
+                "aufpreis": 4.2
+              }
+            ]
+          }
+        ],
+        "zwischensumme": 41.2,
+        "steuersatz": 19,
+        "steuer": 6.59,
+        "spezielle_wünsche": "Ohne Koriander"
+      },
+      {
+        "position": 3,
+        "artikel_id": "get_001",
+        "sku": "TAJ-GET-001",
+        "name": "Mango Lassi",
+        "menge": 2,
+        "einzelpreis": 3.9,
+        "ausgewählte_variante": {
+          "id": "300ml",
+          "name": "0,3l",
+          "aufpreis": 0
+        },
+        "modifikatoren": [
+          {
+            "modifikator_id": "mod_groesse",
+            "name": "Größe",
+            "ausgewählt": [
+              {
+                "id": "300ml",
+                "name": "0,3l",
+                "aufpreis": 0
+              }
+            ]
+          }
+        ],
+        "zwischensumme": 7.8,
+        "steuersatz": 19,
+        "steuer": 1.25,
+        "spezielle_wünsche": null
+      }
+    ],
+    "preisberechnung": {
+      "zwischensumme_artikel": 57.0,
+      "rabatte": [
+        {
+          "typ": "gutschein",
+          "code": "WELCOME10",
+          "beschreibung": "10% Willkommensrabatt",
+          "betrag": -5.7
+        }
+      ],
+      "zwischensumme_nach_rabatt": 51.3,
+      "liefergebühr": 2.5,
+      "verpackungskosten": 1.5,
+      "trinkgeld": 5.0,
+      "zwischensumme_gesamt": 60.3,
+      "steuern": {
+        "19_prozent": {
+          "steuersatz": 19,
+          "nettobetrag": 50.67,
+          "steuerbetrag": 9.63
+        }
+      },
+      "gesamtbetrag": 60.3,
+      "bezahlt": false,
+      "treuepunkte_verdient": 51
+    },
+    "lieferung": {
+      "lieferadresse": {
+        "straße": "Beispielstraße 45",
+        "plz": "53113",
+        "stadt": "Bonn",
+        "land": "Deutschland"
+      },
+      "lieferanweisungen": "Bitte klingeln bei Müller, 2. OG",
+      "geschätzte_lieferzeit": "2025-10-31T19:15:00Z",
+      "lieferzeit_von": "2025-10-31T19:10:00Z",
+      "lieferzeit_bis": "2025-10-31T19:20:00Z",
+      "fahrer": null,
+      "tracking_link": null
+    },
+    "zahlung": {
+      "zahlungsmethode": "card",
+      "zahlungsmethode_name": "Kartenzahlung",
+      "zahlungsstatus": "ausstehend",
+      "bezahlt_am": null,
+      "transaktions_id": null
+    },
+    "restaurant": {
+      "restaurant_id": "rest_001",
+      "name": "Taj Mahal Restaurant",
+      "adresse": "Musterstraße 123, 53111 Bonn"
+    },
+    "zeitstempel": {
+      "erstellt": "2025-10-31T18:30:00Z",
+      "aktualisiert": "2025-10-31T18:35:00Z",
+      "geschätzte_fertigstellung": "2025-10-31T19:05:00Z"
+    },
+    "notizen": {
+      "kunde_an_restaurant": "Bitte die Samosas extra knusprig machen",
+      "restaurant_intern": "Stammkunde, wichtig!"
+    },
+    "stornierung": {
+      "stornierbar": true,
+      "stornierbar_bis": "2025-10-31T18:40:00Z"
+    }
+  }
+}

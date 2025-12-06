@@ -32,30 +32,19 @@ export const SlideIndicator: React.FC<SlideIndicatorProps> = ({
           key={index}
           onClick={() => onNavigate(index)}
           sx={{
-            width: 12,
-            height: 12,
-            borderRadius: "50%",
+            width: 3,
+            height: 70,
             backgroundColor:
-              currentSlide === index ? "#ef629f" : "rgba(0,0,0,0.2)",
+              currentSlide === index ? "white" : "rgba(255,255,255,0.4)",
             cursor: "pointer",
             transition: "background-color 0.2s ease",
             "&:hover": {
               backgroundColor:
-                currentSlide === index ? "#ef629f" : "rgba(0,0,0,0.4)",
+                currentSlide === index ? "white" : "rgba(0,0,0,0.4)",
             },
           }}
         />
       ))}
-      <Typography
-        sx={{
-          fontSize: "12px",
-          color: "#666",
-          mt: 1,
-          textAlign: "center",
-        }}
-      >
-        {currentSlide + 1}/{totalSlides}
-      </Typography>
     </Box>
   );
 };
