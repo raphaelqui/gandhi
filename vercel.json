@@ -4,16 +4,6 @@
   "public": true,
   "buildCommand": "npm run build",
   "devCommand": "npm run dev",
-  "env": {
-    "NEXT_PUBLIC_GOOGLE_PLACES_API_KEY": {
-      "description": "Google Places API Key für Google Maps",
-      "required": true
-    },
-    "WHATSAPP_PHONE_NUMBER": {
-      "description": "WhatsApp Telefonnummer für Reservierungen",
-      "required": true
-    }
-  },
   "functions": {
     "pages/api/**/*.ts": {
       "memory": 512,
