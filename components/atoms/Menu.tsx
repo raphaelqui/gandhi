@@ -544,7 +544,9 @@ const Menu: React.FC<MenuProps> = ({
           <Box
             key={category.id}
             ref={(el: HTMLDivElement | null) => {
-              if (el) categoryRefs.current[category.id] = el;
+              if (el !== null) {
+                categoryRefs.current[category.id] = el;
+              }
             }}
             sx={{ mb: 6 }}
           >
