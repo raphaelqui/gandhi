@@ -408,7 +408,7 @@ const Menu: React.FC<MenuProps> = ({
   }, [menuData.categories, activeTab]);
 
   // Tab Click Handler
-  const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
+  const handleTabChange = (_event: React.SyntheticEvent, newValue: number) => {
     setActiveTab(newValue);
     const category = menuData.categories[newValue];
     const element = categoryRefs.current[category.id];
@@ -543,7 +543,9 @@ const Menu: React.FC<MenuProps> = ({
         {menuData.categories.map((category) => (
           <Box
             key={category.id}
-            ref={(el) => (categoryRefs.current[category.id] = el)}
+            ref={(el: HTMLDivElement | null) => {
+              if (el) categoryRefs.current[category.id] = el;
+            }}
             sx={{ mb: 6 }}
           >
             {/* Kategorie Header */}

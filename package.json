@@ -1,12 +1,17 @@
 {
-  "name": "restaurant-website",
+  "name": "gandhi-restaurant",
   "version": "1.0.0",
+  "description": "Modern Restaurant One-Pager Website with Menu, Reservations & Maps",
+  "author": "Your Restaurant",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
@@ -29,5 +34,9 @@
     "@types/react-dom": "^18.2.0",
     "file-loader": "^6.2.0",
     "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }

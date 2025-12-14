@@ -1,11 +1,10 @@
 "use client";
 import LanguageIcon from "@mui/icons-material/Language";
-import DeliveryDiningTwoToneIcon from "@mui/icons-material/DeliveryDiningTwoTone";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import Image from "next/image";
 import React from "react";
 import Logo from "@/assets/logoneu_gold.png";
-import { Stack, Toolbar, Typography, Button, Box } from "@mui/material";
+import { Stack, Typography, Box } from "@mui/material";
 
 interface NavbarProps {
   onNavigate: (slideIndex: number, top?: boolean) => void;
@@ -33,7 +32,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
           alignItems: "center",
         }}
       >
-        <Stack direction={"row"} sx={{ alignItems: "center", gap: { xs: 0.5, sm: 1 } }}>
+        <Stack
+          direction={"row"}
+          sx={{ alignItems: "center", gap: { xs: 0.5, sm: 1 } }}
+        >
           <Image src={Logo} alt="Logo" width={40} height={40} />
           <Stack sx={{ display: { xs: "none", sm: "flex" } }}>
             <Typography
@@ -63,7 +65,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
             </Typography>
           </Stack>
         </Stack>
-        <Stack direction={"row"} sx={{ gap: { xs: 0.5, sm: 1 }, ml: { xs: 0.5, sm: 1.5 }, display: { xs: "none", md: "flex" } }}>
+        <Stack
+          direction={"row"}
+          sx={{
+            gap: { xs: 0.5, sm: 1 },
+            ml: { xs: 0.5, sm: 1.5 },
+            display: { xs: "none", md: "flex" },
+          }}
+        >
           <Stack
             gap={0.6}
             direction={"row"}
@@ -122,7 +131,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
             MENU & KARTE
           </Stack>
         </Stack>
-        <Stack direction={"row"} sx={{ gap: { xs: 0.5, sm: 1 } }} ml={"auto"} mr={{ xs: 0.5, sm: 1 }}>
+        <Stack
+          direction={"row"}
+          sx={{ gap: { xs: 0.5, sm: 1 } }}
+          ml={"auto"}
+          mr={{ xs: 0.5, sm: 1 }}
+        >
           <Stack
             gap={0.6}
             direction={"row"}

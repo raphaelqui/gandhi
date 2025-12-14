@@ -4,11 +4,8 @@
 import { useRef, useEffect, useState } from "react";
 import { Box, Skeleton } from "@mui/material";
 
-// Dein Video hier importieren
-import myVideo from "@/public/videos/badshaimosque.mp4";
-
 export default function MosqueVid() {
-  const videoRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -62,7 +59,7 @@ export default function MosqueVid() {
           transition: "opacity 0.3s ease-in-out",
         }}
       >
-        <source src={myVideo} type="video/mp4" />
+        <source src="/videos/badshaimosque.mp4" type="video/mp4" />
       </Box>
     </Box>
   );

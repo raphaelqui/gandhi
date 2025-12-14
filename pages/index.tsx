@@ -3,28 +3,21 @@ import Layout from "@/components/Layout";
 import { Navbar } from "@/components/Navbar";
 import { SlideIndicator } from "@/components/SlideIndicator";
 import { SwipeXYControl, SwipeXYElement } from "@/components/swipexy";
-import { Typography, Button, Box, Stack } from "@mui/material";
+import { Typography, Box, Stack } from "@mui/material";
 import ReviewCarousel from "@/components/atoms/ReviewCarousel";
 import RestaurantMap from "@/components/atoms/RestaurantMap";
 import Ornament from "@/components/atoms/Ornament";
-import Frame1 from "@/assets/frame1_9px.png";
 import halal from "@/assets/Halal_logo.svg.png";
 import trip from "@/assets/trip.png.png";
 import Interior from "@/assets/interior.png";
-import Content2 from "@/assets/content2.png";
-import Content3 from "@/assets/content3.png";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { useTranslation } from "@/lib/useTranslation";
 import CallIcon from "@mui/icons-material/Call";
 import MyLocationRoundedIcon from "@mui/icons-material/MyLocationRounded";
-import Menu from "@/components/atoms/Menu";
 import Image from "next/image";
-import menucontent from "@/assets/menu.json";
 import { ReservationForm } from "@/components/ReservationForm";
 import { MenuSection } from "@/components/MenuSection";
 
 export default function Home() {
-  const { t } = useTranslation();
   const [xy, setXY] = useState("0/0");
 
   // xy may include an optional flag suffix after a pipe, e.g. "0/2|top".
@@ -361,7 +354,14 @@ export default function Home() {
                     </Stack>
                   </Stack>
 
-                  <Stack width={"100%"} mt={{ xs: 6, md: 12 }} mx={{ xs: 0, md: 10 }} direction={{ xs: "column", md: "row" }} px={{ xs: 2, md: 0 }} gap={{ xs: 4, md: 3 }}>
+                  <Stack
+                    width={"100%"}
+                    mt={{ xs: 6, md: 12 }}
+                    mx={{ xs: 0, md: 10 }}
+                    direction={{ xs: "column", md: "row" }}
+                    px={{ xs: 2, md: 0 }}
+                    gap={{ xs: 4, md: 3 }}
+                  >
                     <Stack
                       sx={{
                         height: { xs: "250px", sm: "300px", md: "312px" },
@@ -397,7 +397,10 @@ export default function Home() {
                       >
                         Unsere Öffnungszeiten
                       </Typography>
-                      <Stack direction={{ xs: "column", sm: "row" }} gap={{ xs: 1, sm: 2 }}>
+                      <Stack
+                        direction={{ xs: "column", sm: "row" }}
+                        gap={{ xs: 1, sm: 2 }}
+                      >
                         <Box
                           sx={{
                             zIndex: 2,

@@ -1,6 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js"
-}
+{"/_app":"pages/_app.js","/api/orders":"pages/api/orders.js","/api/reservation":"pages/api/reservation.js","/api/reservations":"pages/api/reservations.js","/api/reviews":"pages/api/reviews.js","/_error":"pages/_error.js","/api/socket":"pages/api/socket.js","/_document":"pages/_document.js","/de/404":"pages/de/404.html","/en/404":"pages/en/404.html","/fr/404":"pages/fr/404.html","/es/404":"pages/es/404.html","/it/404":"pages/it/404.html","/de/500":"pages/de/500.html","/en/500":"pages/en/500.html","/fr/500":"pages/fr/500.html","/es/500":"pages/es/500.html","/it/500":"pages/it/500.html","/de/menu":"pages/de/menu.html","/en/menu":"pages/en/menu.html","/fr/menu":"pages/fr/menu.html","/es/menu":"pages/es/menu.html","/it/menu":"pages/it/menu.html","/de":"pages/de.html","/en":"pages/en.html","/fr":"pages/fr.html","/es":"pages/es.html","/it":"pages/it.html","/de/reservations":"pages/de/reservations.html","/en/reservations":"pages/en/reservations.html","/fr/reservations":"pages/fr/reservations.html","/es/reservations":"pages/es/reservations.html","/it/reservations":"pages/it/reservations.html"}

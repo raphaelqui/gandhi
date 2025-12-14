@@ -29,10 +29,10 @@ interface ApiResponse {
 
 export default function ReviewCarousel() {
   const [reviews, setReviews] = useState<GooglePlacesReview[]>([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [visible, setVisible] = useState(true); // Fade-In/Fade-Out Steuerung
+  const [visible] = useState(true); // Fade-In/Fade-Out Steuerung
 
   useEffect(() => {
     async function fetchReviews() {

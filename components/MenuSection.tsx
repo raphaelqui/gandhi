@@ -58,14 +58,6 @@ export const MenuSection: React.FC = () => {
 
   const allergenMap = restaurant.allergene;
 
-  const getAllergenLabel = (tag: string) => {
-    if (!tag) return null;
-    const allergenLabels = tag
-      .split("/")
-      .map((t) => allergenMap[t as keyof typeof allergenMap]);
-    return allergenLabels.filter(Boolean).join(", ");
-  };
-
   return (
     <Stack
       sx={{
@@ -110,7 +102,13 @@ export const MenuSection: React.FC = () => {
           size="small"
           InputProps={{
             startAdornment: (
-              <SearchIcon sx={{ mr: 1, color: "rgb(199, 184, 130)", fontSize: { xs: 18, sm: 20 } }} />
+              <SearchIcon
+                sx={{
+                  mr: 1,
+                  color: "rgb(199, 184, 130)",
+                  fontSize: { xs: 18, sm: 20 },
+                }}
+              />
             ),
           }}
           sx={{
@@ -230,7 +228,11 @@ export const MenuSection: React.FC = () => {
             )}
 
             {/* Items Grid */}
-            <Grid container spacing={{ xs: 1.5, sm: 2 }} sx={{ mb: { xs: 2, sm: 3, md: 4 } }}>
+            <Grid
+              container
+              spacing={{ xs: 1.5, sm: 2 }}
+              sx={{ mb: { xs: 2, sm: 3, md: 4 } }}
+            >
               {category.items.map((item) => (
                 <Grid item xs={12} sm={6} md={4} key={item.id}>
                   <Card

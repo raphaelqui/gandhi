@@ -1,6 +1,6 @@
 import React from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 
 const RestaurantMap = () => {
   // Ersetze diese Koordinaten mit den genauen Koordinaten deines Restaurants
@@ -29,6 +29,8 @@ const RestaurantMap = () => {
     disableDoubleClickZoom: true,
   };
 
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_PLACES_API_KEY || "";
+
   return (
     <Box>
       <Stack
@@ -37,7 +39,7 @@ const RestaurantMap = () => {
           height: "auto",
         }}
       >
-        <LoadScript googleMapsApiKey={process.env.GOOGLE_PLACES_API_KEY}>
+        <LoadScript googleMapsApiKey={apiKey}>
           <GoogleMap
             mapContainerStyle={mapContainerStyle}
             center={center}
