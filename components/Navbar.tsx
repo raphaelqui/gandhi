@@ -16,7 +16,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
     <Stack
       direction={"row"}
       position="fixed"
-      p={0.7}
+      p={{ xs: 0.5, sm: 0.7 }}
       sx={{
         width: "100%",
         zIndex: 1000,
@@ -26,22 +26,23 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
     >
       <Stack
         direction={"row"}
-        mx={1}
+        mx={{ xs: 0.5, sm: 1 }}
         sx={{
           borderRadius: 1,
           width: "100%",
+          alignItems: "center",
         }}
       >
-        <Stack direction={"row"}>
-          <Image src={Logo} alt="Logo" width={46} height={46} />
-          <Stack>
+        <Stack direction={"row"} sx={{ alignItems: "center", gap: { xs: 0.5, sm: 1 } }}>
+          <Image src={Logo} alt="Logo" width={40} height={40} />
+          <Stack sx={{ display: { xs: "none", sm: "flex" } }}>
             <Typography
               sx={{
                 height: 20,
                 fontFamily: "Great Vibes",
                 fontWeight: 600,
                 pt: 0.5,
-                fontSize: 25,
+                fontSize: { xs: 18, sm: 25 },
                 color: "white",
               }}
             >
@@ -62,7 +63,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
             </Typography>
           </Stack>
         </Stack>
-        <Stack direction={"row"} sx={{ gap: 1 }} ml={1.5}>
+        <Stack direction={"row"} sx={{ gap: { xs: 0.5, sm: 1 }, ml: { xs: 0.5, sm: 1.5 }, display: { xs: "none", md: "flex" } }}>
           <Stack
             gap={0.6}
             direction={"row"}
@@ -121,25 +122,24 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
             MENU & KARTE
           </Stack>
         </Stack>
-        <Stack direction={"row"} sx={{ gap: 1 }} ml={"auto"} mr={1}>
+        <Stack direction={"row"} sx={{ gap: { xs: 0.5, sm: 1 } }} ml={"auto"} mr={{ xs: 0.5, sm: 1 }}>
           <Stack
             gap={0.6}
             direction={"row"}
             sx={{
               cursor: "pointer",
               py: 0.8,
-              px: 1.2,
+              px: { xs: 0.8, sm: 1.2 },
               my: "auto",
               fontFamily: "Montserrat",
               color: "white",
               fontWeight: 400,
-              fontSize: 13,
-              // backgroundColor: "#c7b882",
+              fontSize: { xs: 10, sm: 13 },
             }}
           >
             <ShoppingBagOutlinedIcon
               sx={{
-                fontSize: 16,
+                fontSize: { xs: 14, sm: 16 },
                 transform: "translateY(1.5px)",
               }}
             />
@@ -160,7 +160,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
             >
               2
             </Box>
-            0,00 EUR
+            <Box sx={{ display: { xs: "none", sm: "block" } }}>0,00 EUR</Box>
           </Stack>
           <Box
             sx={{
@@ -168,6 +168,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
               height: "18px",
               width: "1px",
               bgcolor: "rgba(255,255,255,0.55)",
+              display: { xs: "none", sm: "block" },
             }}
           />
           <Stack
@@ -176,22 +177,22 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
             sx={{
               cursor: "pointer",
               py: 0.8,
-              px: 1.2,
+              px: { xs: 0.8, sm: 1.2 },
               my: "auto",
               fontFamily: "Montserrat",
               color: "rgba(0,0,0,0.65)",
               fontWeight: 600,
-              fontSize: 13,
+              fontSize: { xs: 10, sm: 13 },
               backgroundColor: "#c7b882",
             }}
           >
             <LanguageIcon
               sx={{
-                fontSize: 16,
+                fontSize: { xs: 14, sm: 16 },
                 transform: "translateY(2.2px)",
               }}
             />
-            DE
+            <Box sx={{ display: { xs: "none", sm: "block" } }}>DE</Box>
           </Stack>
         </Stack>
       </Stack>

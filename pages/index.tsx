@@ -20,6 +20,8 @@ import MyLocationRoundedIcon from "@mui/icons-material/MyLocationRounded";
 import Menu from "@/components/atoms/Menu";
 import Image from "next/image";
 import menucontent from "@/assets/menu.json";
+import { ReservationForm } from "@/components/ReservationForm";
+import { MenuSection } from "@/components/MenuSection";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -42,7 +44,7 @@ export default function Home() {
       <Navbar onNavigate={handleNavigate} />
       <SlideIndicator
         currentSlide={currentSlide}
-        totalSlides={4}
+        totalSlides={3}
         onNavigate={handleNavigate}
       />
 
@@ -55,10 +57,10 @@ export default function Home() {
               overflow: "hidden",
               width: "100%",
               minHeight: {
-                xs: "100vh",
-                sm: "1200px",
-                md: "1900px",
-                lg: "1600px",
+                xs: "200vh",
+                sm: "220vh",
+                md: "240vh",
+                lg: "200vh",
               },
               background: "#171717",
               display: "flex",
@@ -134,9 +136,11 @@ export default function Home() {
                       mx: "auto",
                       color: "rgb(199, 184, 130)",
                       fontFamily: "Playfair Display",
-                      fontSize: 30,
+                      fontSize: { xs: 18, sm: 24, md: 30 },
                       fontWeight: 200,
-                      height: 25,
+                      height: "auto",
+                      px: 2,
+                      textAlign: "center",
                     }}
                   >
                     Das sagen unsere Gäste
@@ -145,19 +149,20 @@ export default function Home() {
                     sx={{
                       mx: "auto",
                       mt: 1,
-                      height: 65,
+                      height: "auto",
                       color: "rgba(199, 184, 130, 0.35)",
                       fontFamily: "Playfair Display",
-                      fontSize: 80,
+                      fontSize: { xs: 40, sm: 60, md: 80 },
                       fontWeight: 400,
                     }}
                   >
-                    “
+                    "
                   </Typography>
                   <Box
                     sx={{
-                      width: "auto",
+                      width: "100%",
                       mx: "auto",
+                      px: { xs: 2, md: 0 },
                     }}
                   >
                     <ReviewCarousel />
@@ -266,18 +271,20 @@ export default function Home() {
                           sx={{
                             cursor: "pointer",
                             mt: 2,
-                            height: 30,
+                            height: { xs: 36, sm: 30 },
                             px: 1.5,
                             border: "1px solid rgb(199, 184, 130)",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
                           }}
                         >
                           <Box
                             sx={{
                               fontFamily: "Montserrat",
-                              fontSize: 12,
+                              fontSize: { xs: 11, sm: 12 },
                               fontWeight: 600,
                               textAlign: "center",
-                              lineHeight: 2.3,
                               color: "rgb(199, 184, 130)",
                             }}
                           >
@@ -291,8 +298,11 @@ export default function Home() {
                             cursor: "pointer",
                             px: 1.5,
                             mt: 2,
-                            height: 30,
+                            height: { xs: 36, sm: 30 },
                             border: "1px solid rgb(199, 184, 130)",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
                           }}
                         >
                           <CallIcon
@@ -305,10 +315,9 @@ export default function Home() {
                           <Box
                             sx={{
                               fontFamily: "Montserrat",
-                              fontSize: 12,
+                              fontSize: { xs: 11, sm: 12 },
                               fontWeight: 600,
                               textAlign: "center",
-                              lineHeight: 2.3,
                               color: "rgb(199, 184, 130)",
                             }}
                           >
@@ -322,24 +331,26 @@ export default function Home() {
                             cursor: "pointer",
                             px: 1.5,
                             mt: 2,
-                            height: 30,
+                            height: { xs: 36, sm: 30 },
                             border: "1px solid rgb(199, 184, 130)",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
                           }}
                         >
                           <WhatsAppIcon
                             sx={{
                               my: "auto",
-                              fontSize: "14px",
+                              fontSize: { xs: 12, sm: 14 },
                               color: "rgb(199, 184, 130)",
                             }}
                           />
                           <Box
                             sx={{
                               fontFamily: "Montserrat",
-                              fontSize: 12,
+                              fontSize: { xs: 11, sm: 12 },
                               fontWeight: 600,
                               textAlign: "center",
-                              lineHeight: 2.3,
                               color: "rgb(199, 184, 130)",
                             }}
                           >
@@ -350,11 +361,11 @@ export default function Home() {
                     </Stack>
                   </Stack>
 
-                  <Stack width={"100%"} mt={12} mx={10} direction={"row"}>
+                  <Stack width={"100%"} mt={{ xs: 6, md: 12 }} mx={{ xs: 0, md: 10 }} direction={{ xs: "column", md: "row" }} px={{ xs: 2, md: 0 }} gap={{ xs: 4, md: 3 }}>
                     <Stack
                       sx={{
-                        height: "312px",
-                        width: "auto",
+                        height: { xs: "250px", sm: "300px", md: "312px" },
+                        width: "100%",
                         borderBottomLeftRadius: 3,
                       }}
                     >
@@ -362,35 +373,37 @@ export default function Home() {
                     </Stack>
                     <Box
                       sx={{
-                        ml: 3,
+                        display: { xs: "none", md: "block" },
                         width: "1px",
                         bgcolor: "rgba(199, 184, 130, 0.75)",
                       }}
                     />
                     <Stack
                       sx={{
-                        ml: 3,
+                        ml: { xs: 0, md: 3 },
+                        flex: 1,
                       }}
                     >
                       <Typography
                         sx={{
                           color: "rgb(199, 184, 130)",
                           fontFamily: "Playfair Display",
-                          fontSize: 17,
+                          fontSize: { xs: 13, sm: 15, md: 17 },
                           fontWeight: 400,
                           letterSpacing: 0.75,
-                          height: 25,
+                          height: "auto",
+                          mt: 2,
                         }}
                       >
                         Unsere Öffnungszeiten
                       </Typography>
-                      <Stack direction={"row"} gap={2}>
+                      <Stack direction={{ xs: "column", sm: "row" }} gap={{ xs: 1, sm: 2 }}>
                         <Box
                           sx={{
                             zIndex: 2,
                             color: "white",
                             fontFamily: "Montserrat",
-                            fontSize: 13,
+                            fontSize: { xs: 12, md: 13 },
                             mt: 0.5,
                             mb: 2,
                             fontWeight: 400,
@@ -416,7 +429,7 @@ export default function Home() {
                             zIndex: 2,
                             color: "white",
                             fontFamily: "Montserrat",
-                            fontSize: 13,
+                            fontSize: { xs: 12, md: 13 },
                             mt: 0.5,
                             mb: 2,
                             fontWeight: 400,
@@ -443,11 +456,11 @@ export default function Home() {
                         sx={{
                           color: "rgb(199, 184, 130)",
                           fontFamily: "Playfair Display",
-                          fontSize: 17,
+                          fontSize: { xs: 13, sm: 15, md: 17 },
                           fontWeight: 400,
                           letterSpacing: 0.75,
-                          height: 25,
-                          mt: 1,
+                          height: "auto",
+                          mt: 3,
                         }}
                       >
                         Adresse
@@ -457,7 +470,7 @@ export default function Home() {
                           zIndex: 2,
                           color: "white",
                           fontFamily: "Montserrat",
-                          fontSize: 13,
+                          fontSize: { xs: 12, md: 13 },
                           mt: 0.5,
                           mb: 2,
                           fontWeight: 400,
@@ -474,24 +487,26 @@ export default function Home() {
                           cursor: "pointer",
                           px: 1.5,
                           mt: 2,
-                          height: 30,
+                          height: { xs: 36, sm: 30 },
                           bgcolor: "rgb(199, 184, 130)",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
                         }}
                       >
                         <MyLocationRoundedIcon
                           sx={{
                             my: "auto",
-                            fontSize: "14px",
+                            fontSize: { xs: 12, sm: 14 },
                             color: "#171717",
                           }}
                         />
                         <Box
                           sx={{
                             fontFamily: "Montserrat",
-                            fontSize: 12,
+                            fontSize: { xs: 11, sm: 12 },
                             fontWeight: 600,
                             textAlign: "center",
-                            lineHeight: 2.5,
                             color: "#171717",
                           }}
                         >
@@ -508,18 +523,7 @@ export default function Home() {
 
         {/* Slide 2 - Menü */}
         <SwipeXYElement>
-          <Stack
-            sx={{
-              width: "100%",
-              minHeight: "2000px",
-              background: "#171717",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <Typography variant="h2">Menü</Typography>
-          </Stack>
+          <MenuSection />
         </SwipeXYElement>
 
         {/* Slide 3 - Tisch reservieren */}
@@ -532,25 +536,12 @@ export default function Home() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              pt: { xs: 8, sm: 10 },
+              pb: { xs: 8, sm: 10 },
+              px: { xs: 1, sm: 2, md: 2 },
             }}
           >
-            <Typography variant="h2">Tisch reservieren</Typography>
-          </Stack>
-        </SwipeXYElement>
-
-        {/* Slide 4 */}
-        <SwipeXYElement>
-          <Stack
-            sx={{
-              width: "100%",
-              minHeight: "100vh",
-              background: "#171717",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <Typography variant="h2">Kontakt</Typography>
+            <ReservationForm />
           </Stack>
         </SwipeXYElement>
       </SwipeXYControl>

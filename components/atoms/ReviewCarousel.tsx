@@ -144,8 +144,10 @@ export default function ReviewCarousel() {
   return (
     <Stack
       sx={{
-        width: 500,
-        height: 190,
+        width: { xs: "100%", sm: "100%", md: 500 },
+        maxWidth: 500,
+        height: { xs: "auto", sm: 190, md: 190 },
+        minHeight: { xs: 200, sm: 190 },
       }}
     >
       <Fade in={visible} timeout={500}>

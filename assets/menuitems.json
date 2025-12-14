@@ -1,0 +1,1160 @@
+{
+  "restaurant": {
+    "name": "Restaurant Name",
+    "prop": "alle mit naan und reis",
+    "note": "Änderungen und Irrtümer vorbehalten. Alle Preise in Euro inkl. der gesetzl. MwSt.",
+    "zusatzstoffe": {
+      "1": "Stabilisator",
+      "2": "Säuerungsmittel",
+      "3": "Emulgator",
+      "4": "Antioxidationsmittel",
+      "5": "Geschmacksverstärker",
+      "6": "Konservierungsmittel",
+      "7": "Farbstoff",
+      "8": "Gelier- & Verdickungsstoff",
+      "9": "geschwärzt",
+      "10": "geschwefelt",
+      "11": "Rauch",
+      "12": "koffeinhaltig",
+      "13": "Süßungsmittel"
+    },
+    "allergene": {
+      "A": "enthält glutenhaltiges Getreide",
+      "B": "enthält Krebstiere",
+      "C": "enthält Ei",
+      "D": "enthält Soja",
+      "E": "enthält Erdnüsse",
+      "F": "enthält Fisch",
+      "G": "enthält Milch, Laktose",
+      "H": "enthält Schalenfrüchte",
+      "I": "enthält Sellerie",
+      "J": "enthält Senf",
+      "K": "enthält Sesam",
+      "L": "enthält Sulfite",
+      "M": "enthält Lupine",
+      "N": "enthält Weichtiere"
+    },
+    "menu": [
+      {
+        "category": "Suppen",
+        "items": [
+          {
+            "id": 1,
+            "name": "Daal Suppe (Linsensuppe)",
+            "price": "4,50",
+            "description": "rote Linsensuppe nach köstlicher südindischer Art"
+          },
+          {
+            "id": 2,
+            "name": "Vegetarische Suppe",
+            "price": "5,00",
+            "description": "gemischte Gemüsesuppe, leicht gewürzt"
+          },
+          {
+            "id": 3,
+            "name": "Hähnchensuppe",
+            "price": "5,50",
+            "description": "typisch indische Currysuppe mit Hühnerfleisch (eine leicht garnierte Hühnersuppe)"
+          },
+          {
+            "id": 4,
+            "name": "Lamm Suppe",
+            "price": "6,00",
+            "description": "sauer-scharfe Suppe mit gegrilltem Lammfleisch oder frischem Gemüse nach Ihrer Wahl"
+          },
+          {
+            "id": 5,
+            "name": "Champignon-Cremesuppe",
+            "price": "5,00",
+            "description": "aus frischen Champignons, mit indischen Kräutern, garniert mit Sahne",
+            "tag": "G"
+          }
+        ]
+      },
+      {
+        "category": "Salate & Soßen",
+        "items": [
+          {
+            "id": 6,
+            "name": "Shahi Salat",
+            "price": "5,90",
+            "description": "Süßer Früchtesalat nach indischer Art",
+            "tag": "G"
+          },
+          {
+            "id": 7,
+            "name": "Hara Bhara Salat (groß)",
+            "price": "5,40",
+            "description": "großer indischer grüner Salat mit Karotten",
+            "tag": "J"
+          },
+          {
+            "id": 8,
+            "name": "Jinga Salat",
+            "price": "7,10",
+            "description": "grüner Salat mit gebratenen Shrimps",
+            "tag": "B/J"
+          },
+          {
+            "id": 9,
+            "name": "Chicken Salat",
+            "price": "7,60",
+            "description": "gem. Salat mit gebratenem Hähnchenfleisch",
+            "tag": "J"
+          },
+          {
+            "id": 10,
+            "name": "Channa chat",
+            "price": "7,50",
+            "description": "Kichererbsensalat mit Tomaten, rote Zwiebel, Kräuter mit Tamarind, Weißweinessig und Süßsauersoße.",
+            "tag": "J"
+          }
+        ]
+      },
+      {
+        "category": "Pakoras",
+        "note": "Die Pakoras werden in Kichererbsenmehlteig gewendet und frittiert",
+        "items": [
+          {
+            "id": 11,
+            "name": "Ghobi Pakora",
+            "price": "3,50",
+            "description": "mit Blumenkohl, frittiert (5 Stück)",
+            "tag": "A"
+          },
+          {
+            "id": 12,
+            "name": "Onion Bhaji",
+            "price": "3,50",
+            "description": "Zwiebelstreifen",
+            "tag": "A"
+          },
+          {
+            "id": 13,
+            "name": "Veg. Pakora",
+            "price": "4,00",
+            "description": "mit Gemüse in Teig, frittiert (5 Stück)",
+            "tag": "A"
+          },
+          {
+            "id": 14,
+            "name": "Khumbi Pakora",
+            "price": "4,00",
+            "description": "mit Champignons, frittiert (5 Stück)",
+            "tag": "A"
+          },
+          {
+            "id": 15,
+            "name": "Chicken Pakora",
+            "price": "5,00",
+            "description": "paniertes Hühnerfilet (5 Stück)",
+            "tag": "A"
+          },
+          {
+            "id": 16,
+            "name": "Scampi Pakora",
+            "price": "6,90",
+            "description": "gewürzte Großgarnelen",
+            "tag": "A"
+          },
+          {
+            "id": 17,
+            "name": "Paneer Pakora",
+            "price": "4,50",
+            "description": "hausgemachter frischer Rahmkäse (5 Stück)",
+            "tag": "A/G"
+          },
+          {
+            "id": 18,
+            "name": "Gemischte Vorspesenplatte",
+            "price": "9,00",
+            "description": "eine Zusammenstellung der oben genannten vegetarischen Vorspeisen",
+            "tag": "A/G"
+          }
+        ]
+      },
+      {
+        "category": "Beilagen",
+        "items": [
+          {
+            "id": 19,
+            "name": "Kashimiri Naan",
+            "price": "4,00",
+            "description": "Tandoori Fladenbrot aus Weißmehl mit Cashewkern, Rosinen und Cocosnussraspel Füllung"
+          },
+          {
+            "id": 20,
+            "name": "Bhatura",
+            "price": "2,50",
+            "description": "frittiertes Brot aus feinstem Weißmehl",
+            "tag": "A"
+          },
+          {
+            "id": 21,
+            "name": "Naan",
+            "price": "2,50",
+            "description": "Fladenbrot aus Weizenmehl, im Ofen gebacken",
+            "tag": "A"
+          },
+          {
+            "id": 22,
+            "name": "Butter Naan",
+            "price": "2,50",
+            "description": "Fladenbrot aus Weizenmehl mit Butter, im Ofen gebacken",
+            "tag": "A"
+          },
+          {
+            "id": 23,
+            "name": "Garlic Naan",
+            "price": "3,50",
+            "description": "Fladenbrot aus Weizenmehl mit einer Knoblauchsauce, im Ofen gebacken",
+            "tag": "A/G"
+          },
+          {
+            "id": 24,
+            "name": "Basmati Reis",
+            "price": "3,00",
+            "description": "indischer Duftreis",
+            "tag": "A"
+          },
+          {
+            "id": 25,
+            "name": "Mix Pickles",
+            "price": "2,50",
+            "description": "eingelegtes, scharfes indisches Gemüse"
+          },
+          {
+            "id": 26,
+            "name": "Mango Chutney",
+            "price": "2,00",
+            "description": "eingelegte Mangofrüchte in süß-saurer Sauce"
+          },
+          {
+            "id": 27,
+            "name": "Papadam",
+            "price": "2,50",
+            "description": "knuspriges Fladenbrot"
+          },
+          {
+            "id": 28,
+            "name": "Chicken Naan",
+            "price": "1,00",
+            "description": "Fladenbrot gefüllt mit Hähnchenfleisch",
+            "tag": "A"
+          },
+          {
+            "id": 29,
+            "name": "Alu Walla Naan",
+            "price": "4,50",
+            "description": "ind. Fladenbrot gefüllt mit Kartoffeln",
+            "tag": "A"
+          },
+          {
+            "id": 30,
+            "name": "Onion Naan",
+            "price": "4,50",
+            "description": "Fladenbrot gefüllt mit Zwiebeln",
+            "tag": "A"
+          },
+          {
+            "id": 31,
+            "name": "Chapati",
+            "price": "4,00",
+            "description": "Fladenbrot aus Vollkornteig",
+            "tag": "A"
+          },
+          {
+            "id": 32,
+            "name": "Pommes",
+            "price": "3,00",
+            "description": "knusprige Pommes Frites"
+          },
+          {
+            "id": 33,
+            "name": "Süßkartoffeln Pommes",
+            "price": "3,50",
+            "description": "knusprige Süßkartoffel Pommes"
+          }
+        ]
+      },
+      {
+        "category": "Samosas",
+        "items": [
+          {
+            "id": 34,
+            "name": "Veg Samosa",
+            "price": "4,00",
+            "description": "gefüllte Teigtaschen mit Kartoffeln und grüne Erbsen"
+          },
+          {
+            "id": 35,
+            "name": "Chicken Samosa",
+            "price": "5,00",
+            "description": "gefüllte Teigtaschen mit gehacktem Hähnchenfleisch"
+          },
+          {
+            "id": 36,
+            "name": "Qeema Samosa",
+            "price": "6,00",
+            "description": "gefüllte Teigtaschen mit Lammhackfleisch"
+          },
+          {
+            "id": 37,
+            "name": "Samosa Chaat",
+            "price": "9,00",
+            "description": "gefüllte Teigtaschen mit Kartoffeln und grüne Erbsen, mit Kichererbsen, Salatbeilage, Joghurtminz und Tamarind Sauce"
+          },
+          {
+            "id": 38,
+            "name": "Chola Bhatura",
+            "price": "13,00",
+            "description": "Kichererbsen min aromatischer Sauce, serviert mit knusprigem Bhatura (2 Stück)"
+          }
+        ]
+      },
+
+      {
+        "category": "Tandoor veggie",
+        "items": [
+          {
+            "id": 40,
+            "name": "Paneer Tikka",
+            "price": "11,50",
+            "description": "gegrillter hausgemachter Weichkäse mariniert in Joghurt, Knoblauch & Ingwer und dazu Grillgemüse"
+          },
+          {
+            "id": 41,
+            "name": "Hariyali Panner Tikka",
+            "price": "11,90",
+            "description": "gegrillter hausgemachter Weichkäse mariniert in Minzjoghurt, Knoblauch & Ingwer und dazu Grillgemüse"
+          },
+          {
+            "id": 42,
+            "name": "Malai Panner Tikka",
+            "price": "12,50",
+            "description": "gegrillter hausgemachter Weichkäse mariniert in Cashewjoghurtcreme"
+          },
+          {
+            "id": 43,
+            "name": "Mushroom Tikka",
+            "price": "10,90",
+            "description": "gegrillt Champignons mariniert in Joghurt, Knoblauch & Ingwer"
+          },
+          {
+            "id": 44,
+            "name": "vegetarische Grillplatte",
+            "price": "15,00",
+            "description": "gemischte Grillplatte mit allen oben genannten vegetarischen Grillspeisen"
+          }
+        ]
+      },
+      {
+        "category": "Fleisch Tandoori Speisen",
+        "items": [
+          {
+            "id": 45,
+            "name": "Chicken Schashlick",
+            "price": "13,50",
+            "description": "gegrillte Hänchenbrust mariniert in Joghurt, Knoblauch und Ingwer. Dazu gegrillte Tomaten, Zwiebel und Paprika. Mit Tomaten-Kräuter-Sauce."
+          },
+          {
+            "id": 46,
+            "name": "Malai Chicken Booti",
+            "price": "13,90",
+            "description": "gegrillte Hänchenbrustfilet in Cashewjoghurtcreme mariniert."
+          },
+          {
+            "id": 47,
+            "name": "Chicken Seekh Kebab",
+            "price": "12,50",
+            "description": "gewürzter Hänchenhack-Grillspieß"
+          },
+          {
+            "id": 48,
+            "name": "Tandoori Tangri Kebab",
+            "price": "14,00",
+            "description": "Hähnchenkeulen in aromatischer Marinade eingelegt und im Tandoor gegrillt. (4 Stck)"
+          },
+          {
+            "id": 49,
+            "name": "Achari Chicken Tikka",
+            "price": "14,00",
+            "description": "Hähnchenfilets mariniert in scharfen Achari-Gewürzen"
+          },
+          {
+            "id": 50,
+            "name": "Chicken Tikka",
+            "price": "11,90",
+            "description": "gegrillte Hähnchenbites mariniert in Joghurt, Knoblauch und Ingwer mit indischen Gewürzen."
+          },
+          {
+            "id": 51,
+            "name": "Haryali Chicken Tikka",
+            "price": "12,90",
+            "description": "gegrillte Hähnchenfilets mariniert in frischen Minzkräuter und indischen Gewürzen."
+          },
+          {
+            "id": 52,
+            "name": "Mutton Tikka",
+            "price": "13,90",
+            "description": "gegrillte Lammfleischstücke mariniert in Joghurt, Knoblauch und Ingwer. Mit indischen Gewürzen."
+          },
+          {
+            "id": 53,
+            "name": "Lamm Champ",
+            "price": "16,00",
+            "description": "4 saftige Lammkoteletts in Joghurt, Knoblauch und Ingwer. Mit indischen Gewürzen."
+          },
+          {
+            "id": 54,
+            "name": "Mutton Seekh Kebab",
+            "price": "13,50",
+            "description": "Lammhackfleisch am Spieß im Tandoor gegrillt. Serviert mit Minzsauce."
+          },
+          {
+            "id": 55,
+            "name": "Lamm Achari Tikka",
+            "price": "13,90",
+            "description": "Lammfleisch in würziger Joghurt Pickle Marinade gegrillt."
+          },
+          {
+            "id": 56,
+            "name": "Fish Tikka",
+            "price": "14,50",
+            "description": "Lachsfilet mariniert in Joghurt, Knoblach und Ingwer mit indischen Gewürz."
+          },
+          {
+            "id": 57,
+            "name": "Scampi Tikka",
+            "price": "14,00",
+            "description": "Riesengarnelen in Joghurt, Knoblauch und Ingwer Marinade gegrillt"
+          },
+          {
+            "id": 58,
+            "name": "Hausgrillplatte perfekt für 2 Person",
+            "price": "21,00",
+            "description": "verschiedene Tandoori-Spezialitätne: Chicken Tikka, Mutton Achari Tikka, Seekh Kebab. Serviert mit Soßen-Mix."
+          }
+        ]
+      },
+      {
+        "category": "Vegane Speisen",
+        "items": [
+          {
+            "id": 59,
+            "name": "Tarka Daal",
+            "price": "11,00",
+            "description": "gebratene Toor Daal / helle Linsen mit Tomaten, Ziebeln in Currysauce."
+          },
+          {
+            "id": 60,
+            "name": "Bombay Aloo",
+            "price": "9,90",
+            "description": "kleine Kartoffeln in Bombay Art Gewürzt und Currysauce."
+          },
+          {
+            "id": 61,
+            "name": "Jeera Aloo",
+            "price": "9,90",
+            "description": "Kartoffeln gewürzt mit Kümmel und mit milder Currysauce."
+          },
+          {
+            "id": 62,
+            "name": "Aloo Baigan",
+            "price": "9,90",
+            "description": "Kartoffeln, Zwiebel und Aubergine in Currysauce"
+          },
+          {
+            "id": 63,
+            "name": "Aloo Mutter",
+            "price": "9,90",
+            "description": "Kartoffeln mit Erbsen in Currysauce"
+          },
+          {
+            "id": 64,
+            "name": "Bindi Masala",
+            "price": "13,00",
+            "description": "gebratenes Okragemüse mit Zwiebeln, Tomaten und indischen Gewürzen"
+          },
+          {
+            "id": 65,
+            "name": "Channa Masala",
+            "price": "9,90",
+            "description": "gebratene Kichererbsen mit Zwiebeln, Tomaten und Currysauce"
+          },
+          {
+            "id": 66,
+            "name": "Mix Sabji",
+            "price": "9,90",
+            "description": "Verschiedenes Gemüse gebraten Knoblauch und Ingwer mit Currysauce"
+          }
+        ]
+      },
+      {
+        "category": "Vegetarische Speisen",
+        "items": [
+          {
+            "id": 67,
+            "name": "Sabji Masala",
+            "price": "11,00",
+            "description": "verschiedenes Gemüse in gahackter Tomaten-Zwiebel Curry-Sahnesauce "
+          },
+          {
+            "id": 68,
+            "name": "Daal Makhni",
+            "price": "11,50",
+            "description": "Verschiedene Linsen mit Buttercreme mit Ingwer und Knoblauch"
+          },
+          {
+            "id": 69,
+            "name": "Veggie Korma",
+            "price": "11,50",
+            "description": "verschiedenes Gemüse mit Rosinen und Cashewcremesauce"
+          },
+          {
+            "id": 70,
+            "name": "Aloo Ghobi",
+            "price": "11,50",
+            "description": "Blumenkohl und Kartoffeln mit Ingwer, Knoblauch und Tomaten nach spezieller indischer Art zubereitet."
+          },
+          {
+            "id": 71,
+            "name": "Palak Paneer",
+            "price": "11,50",
+            "description": "Hausgemachter Weichkäse und Spinat mit verschiedenen Gewürzen gebraten"
+          },
+          {
+            "id": 72,
+            "name": "Palak Aloo",
+            "price": "11,50",
+            "description": "Kartoffeln, Spinat mit Ingwer, Knoblauch durch Nordindischen-Art zubereitet "
+          },
+          {
+            "id": 73,
+            "name": "Matter Panner",
+            "price": "11,50",
+            "description": "gebratener hausgemachter Weichkäse mit Erbsen in Currysahnesauce."
+          },
+          {
+            "id": 74,
+            "name": "Khumbi Panner Masala",
+            "price": "11,90",
+            "description": "gebratene Champignons und hausgemachten Weichkäse in gehackten Zwiebel-Tomaten-Sahnesauce."
+          },
+          {
+            "id": 75,
+            "name": "Shahi Paneer",
+            "price": "11,50",
+            "description": "hausgemachter Weichkäse mit Rosinen und Tomaten-Butter-sauce."
+          },
+          {
+            "id": 76,
+            "name": "Malai Kofta",
+            "price": "12,50",
+            "description": "Bällchen aus Weichkäse und Cashewcremesauce mit Rosinen und Mandeln"
+          },
+          {
+            "id": 77,
+            "name": "Paneer Jhalfrezi (mittelscharf)",
+            "price": "11,50",
+            "description": "hausgemachter Weichkäse mit gebratenen Paprika, ingwer, Knoblauch und scharfer Tomaten-Currysauce."
+          },
+          {
+            "id": 78,
+            "name": "Shahi Baingan",
+            "price": "12,90",
+            "description": "gefüllte Aubergine mit Bällchen aus Weichkäse, Mandeln, Rosinen in Tomatenbuttersauce"
+          },
+          {
+            "id": 79,
+            "name": "Sabji Mango",
+            "price": "11,90",
+            "description": "Gemüse in einer Mango-Curry-Sahnesauce"
+          },
+          {
+            "id": 80,
+            "name": "Palak Daal",
+            "price": "11,50",
+            "description": "Gebrater Spinat mit gelben Linsen in einer würzigen Sauce"
+          },
+          {
+            "id": 81,
+            "name": "Panner Butter Masala",
+            "price": "11,50",
+            "description": "hausgemachter Weichkäse in gehackter Tomaten-Zwiebel Tomatenbuttercreme"
+          },
+          {
+            "id": 82,
+            "name": "Paneer Mango",
+            "price": "12,50",
+            "description": "hausgemachter Weichkäse in einer Mango-Curry-Sahncesauce"
+          },
+          {
+            "id": 83,
+            "name": "Baingan Bharta",
+            "price": "12,00",
+            "description": "gebratenes Aubergine in einer würzigen, rauchigen Sauce"
+          },
+          {
+            "id": 84,
+            "name": "Baingan Bharta",
+            "price": "12,00",
+            "description": "gebratenes Aubergine in einer würzigen, rauchigen Sauce"
+          }
+        ]
+      },
+      {
+        "category": "Hänchen Hauptgerichte",
+        "items": [
+          {
+            "id": 85,
+            "name": "Chickencurry",
+            "price": "11,00",
+            "description": "Hühnchenfleisch in Currysauce nach köstlicher indischer Art zubereitet"
+          },
+          {
+            "id": 86,
+            "name": "Chicken Sabji",
+            "price": "12,00",
+            "description": "Hühnchenfilet mit verschiedenen Gemüse in einer milden Currysauce"
+          },
+          {
+            "id": 87,
+            "name": "Chicken Jakhni",
+            "price": "12,50",
+            "description": "gebratenes Hühnchenfilets, 12 Stunden eingelegt in Ingwer-Knoblauch-Paste mit Joghurt und Mandeln"
+          },
+          {
+            "id": 88,
+            "name": "Chicken Haus",
+            "price": "13,50",
+            "description": "gebratene Hühnchenfilets mit Paprika, hausgemachten Weichkäse in spezieller Tomatenbuttersauce."
+          },
+          {
+            "id": 89,
+            "name": "Butter Chicken",
+            "price": "12,50",
+            "description": "saftige Hünchenstücke gegrillt mit indischen Gewürzen in rinrt Tomaten-Buttercreme"
+          },
+          {
+            "id": 90,
+            "name": "Murgh Palak",
+            "price": "12,50",
+            "description": "Hühnerfilet in Spinat mit Ingwer und Knoblauch nach indischer Art zubereitet."
+          },
+          {
+            "id": 91,
+            "name": "Chicken Korma",
+            "price": "12,50",
+            "description": "Hühnerfiletstücke mit Rosinen und Cashewcremesauce"
+          },
+          {
+            "id": 92,
+            "name": "Chicken Banglor",
+            "price": "12,00",
+            "description": "Hähnchenfleisch mit Ananas, fr. Ingwer, Knoblauch, mit exotischen Gewürzen gemischt"
+          },
+          {
+            "id": 93,
+            "name": "Chicken Madras (scharf)",
+            "price": "12,00",
+            "description": "Hühnerfilet mit Kokosraspeln in einer Gewürzmischung nach köstlicher südindischer Art"
+          },
+          {
+            "id": 94,
+            "name": "Chicken Vindaloo (scharf)",
+            "price": "12,90",
+            "description": "Hühnerfilet mit Kartoffeln, Ingwer, fr. Tomaten nach spezieller südindischer Art"
+          },
+          {
+            "id": 95,
+            "name": "Chicken Jhalfrezi (mittelscharf)",
+            "price": "11,90",
+            "description": "Hühnerfilet mit Zwiebeln, Paprika, Ingwer, gewürzt nach spezieller nordindischer Art"
+          },
+          {
+            "id": 96,
+            "name": "Chicken Mango (mild)",
+            "price": "12,00",
+            "description": "Hühnerfiletstücke in einer milden Mango-Sahnesauce"
+          },
+          {
+            "id": 97,
+            "name": "Chicken Kasmiri",
+            "price": "12,00",
+            "description": "Hähnchenfl., Früchten, Kokosmilch, Currysauce"
+          },
+          {
+            "id": 98,
+            "name": "Chicken Achar",
+            "price": "12,00",
+            "description": "Hähnchenfleisch in scharfer Currysauce"
+          },
+          {
+            "id": 99,
+            "name": "Chicken Karahi",
+            "price": "12,50",
+            "description": "Hähnchenfl., Tomaten, Zwiebeln, Currysauce"
+          },
+          {
+            "id": 100,
+            "name": "Chicken Buuna (scharf)",
+            "price": "12,50",
+            "description": "Hähnchenfleisch in Sahne mit Curry, Ingwer, Knoblauch, Zwiebeln, Tomaten, Paprika"
+          },
+          {
+            "id": 101,
+            "name": "Murgh Channa",
+            "price": "12,50",
+            "description": "Hähnchenfleisch mit Kichererbsen, frischen Tomaten, nach köstlicher ind. Art"
+          },
+          {
+            "id": 102,
+            "name": "Chicken Dal",
+            "price": "12,50",
+            "description": "Hähnchenfleisch mit gelben Linsen, Zwiebeln, Tomaten, in Currysauce"
+          },
+          {
+            "id": 103,
+            "name": "Punjabi Chicken Masala",
+            "price": "14,00",
+            "description": "Hähnchenfleisch mit Knochen, zubereitet mit gehackten Zwiebeln, Tomaten und aromatischen Gewürzen in einer Ingwer-Knoblauch-Curry-Sauce"
+          },
+          {
+            "id": 104,
+            "name": "Chicken White Karahi",
+            "price": "13,00",
+            "description": "Hähnchenfilets in einer scharfen Pfeffer-Cashew-Joghurt-Sauce"
+          },
+          {
+            "id": 105,
+            "name": "Chicken Tikka Masala",
+            "price": "13,00",
+            "description": "Hähnchenfilets in Joghurt-Sahnesauce mit Paprika, Zwiebeln und fr. Tomaten"
+          },
+          {
+            "id": 106,
+            "name": "Chili Chicken Masala",
+            "price": "13,50",
+            "description": "Hähnchenfleisch mit gebr. Zwiebeln, Paprika, Ingwer und Knoblauch"
+          },
+          {
+            "id": 107,
+            "name": "Chicken Munchurian",
+            "price": "11,00",
+            "description": "Hähnchenfleisch in indo-chinesischer Sauce mit Zwiebeln, Paprika und Knoblauch"
+          }
+        ]
+      },
+      {
+        "category": "Lammgerichte",
+        "note": "Alle Gerichte mit Reis",
+        "items": [
+          {
+            "id": 108,
+            "name": "Lamm Curry",
+            "price": "13,50",
+            "description": "Lammfleisch in einer Currysauce nach köstlicher indischer Art"
+          },
+          {
+            "id": 109,
+            "name": "Lamm Sabji",
+            "price": "14,50",
+            "description": "zarte Lammfleischstücke mit verschiedenem Gemüse in speziellen indischen Gewürzen gegart"
+          },
+          {
+            "id": 110,
+            "name": "Lamm Jakhani",
+            "price": "15,00",
+            "description": "eingelegte Lammfleischstücke nach spezieller indischer Art zubereitet, in einer Joghurtsauce mit Mandeln",
+            "tag": "G/H"
+          },
+          {
+            "id": 111,
+            "name": "Lamm Rogan Josh",
+            "price": "13,50",
+            "description": "Lammfleischstücke in einer Sauce aus Knoblauch und Gewürzen in einer roten Currysauce"
+          },
+          {
+            "id": 112,
+            "name": "Lamm Kadai",
+            "price": "15,50",
+            "description": "eingelegte Lammfleischstücke gebraten mit Knoblauch, Zwiebeln, Paprika, frischem Ingwer und Gewürzen"
+          },
+          {
+            "id": 113,
+            "name": "Lamm Saagwala",
+            "price": "16,00",
+            "description": "Lammfleisch in Spinat mit Zwiebeln, frischem Ingwer und Knoblauch gebraten"
+          },
+          {
+            "id": 114,
+            "name": "Lamm Korma",
+            "price": "15,50",
+            "description": "zarte Lammfleischstücke in milder Sahnesauce aus Gewürzen, geriebenem Rahmkäse, Cashewnüssen, Rosinen",
+            "tag": "G/H"
+          },
+          {
+            "id": 115,
+            "name": "Sukha Banglor (mittelscharf)",
+            "price": "15,50",
+            "description": "Lammfleischstücke mit Ananas, fr. Ingwer, Knoblauch, mit exotischen Gewürzen gemischt"
+          },
+          {
+            "id": 116,
+            "name": "Lamm Madras (scharf)",
+            "price": "14,50",
+            "description": "Lammfleischstücke mit Kokosraspeln in spezieller Gewürzmischung nach köstlicher, südindischer Art",
+            "tag": "H"
+          },
+          {
+            "id": 117,
+            "name": "Lamm Vindaloo (scharf)",
+            "price": "15,50",
+            "description": "Lammfleischstücke mit Kartoffeln in einer pikanten Currysauce, nach südindischer Art gegart"
+          },
+          {
+            "id": 118,
+            "name": "Lamm Bhindi",
+            "price": "17,00",
+            "description": "Lammfleischstücke mit Okragemüse, Zwiebeln, frischen Tomaten und indischen Gewürzen"
+          },
+          {
+            "id": 119,
+            "name": "Lamm Bhuna",
+            "price": "14,50",
+            "description": "Lammfleischstücke mit Ingwer, Zwiebeln, Tomaten, Paprika, in Currysauce"
+          },
+          {
+            "id": 120,
+            "name": "Lamm Channa",
+            "price": "15,00",
+            "description": "Lammfleisch mit Linsen, nach indischer Art"
+          },
+          {
+            "id": 121,
+            "name": "Ghobi Gost",
+            "price": "15,50",
+            "description": "Lammfleisch mit Blumenkohl, nach indischer Art"
+          },
+          {
+            "id": 122,
+            "name": "Lamm Mango",
+            "price": "12,00",
+            "description": "Lammfleisch in einer Mango-Curry-Sauce",
+            "tag": "NEU/G"
+          },
+          {
+            "id": 123,
+            "name": "Matter Qeema",
+            "price": "13,50",
+            "description": "Lammhackfleisch mit grünen Erbsen in einer Masala-Sauce"
+          },
+          {
+            "id": 124,
+            "name": "Aloo Qeema",
+            "price": "13,50",
+            "description": "Lammhackfleisch mit Kartoffeln in einer Masala-Sauce"
+          },
+          {
+            "id": 125,
+            "name": "Butter Lamm",
+            "price": "13,50",
+            "description": "Lammfleischstücke gegrillt mit Gewürzen in einer Butter-Tomaten-Sahnesauce",
+            "tag": "NEU/G"
+          },
+          {
+            "id": 126,
+            "name": "Lamm Jalfrezi",
+            "price": "13,50",
+            "description": "Lammfilet mit Zwiebeln, Paprika, Ingwer nach nordindischer Art"
+          }
+        ]
+      },
+      {
+        "category": "Entengerichte",
+        "note": "Alle Gerichte mit Reis",
+        "items": [
+          {
+            "id": 127,
+            "name": "Punjabi Batak",
+            "price": "15,00",
+            "description": "Ente Spezial aus dem orig. ind. Lehmofen"
+          },
+          {
+            "id": 128,
+            "name": "Batak (mittelscharf)",
+            "price": "15,00",
+            "description": "gegrilltes Entenfleisch mit Ingwer, Knoblauch, versch. Kräutern"
+          },
+          {
+            "id": 129,
+            "name": "Batak Madras (mittelscharf)",
+            "price": "15,50",
+            "description": "gegrilltes Entenfleisch mit Kokosraspeln, spez. Gewürzmischung, nach südind. Art"
+          },
+          {
+            "id": 130,
+            "name": "Batak Sabji",
+            "price": "16,00",
+            "description": "gegrillte Entenfiletstücke, pikanter fr. Blumenkohl, Kartoffeln, Ingwer, Knobl., Tomaten, nach nordind. Art"
+          },
+          {
+            "id": 131,
+            "name": "Batak Dahiwala",
+            "price": "16,30",
+            "description": "gegrillte Entenfiletstücke, 12 Std. eingelegt in Ingwer-Knoblauch-Paste, Joghurt-Sahnesauce, Mandeln",
+            "tag": "G/H"
+          },
+          {
+            "id": 132,
+            "name": "Batak Korma",
+            "price": "16,00",
+            "description": "gegr. Entenfiletstücke, milde Sahnesauce, Gewürze, gerieb. Rahmkäse, Mandeln, Rosinen, Cashewnüsse",
+            "tag": "G/H"
+          }
+        ]
+      },
+      {
+        "category": "Maschli - Fisch",
+        "note": "Alle Gerichte mit Reis",
+        "items": [
+          {
+            "id": 133,
+            "name": "Fisch Curry",
+            "price": "13,50",
+            "description": "Rotbarschfilet in einer roten Currysauce, nach köstlicher nordindischer Art",
+            "tag": "F"
+          },
+          {
+            "id": 134,
+            "name": "Fisch Madras (scharf)",
+            "price": "13,50",
+            "description": "Rotbarschfilet mit Kokosraspeln in spezieller Gewürzmischung, nach köstlicher südindischer Art",
+            "tag": "F/H"
+          },
+          {
+            "id": 135,
+            "name": "Fisch Punjabi (mittelscharf)",
+            "price": "13,50",
+            "description": "Rotbarschfilet gewürzt mit einer Mischung aus wohlausgewogenen, exotischen Gewürzen mit Paprika, Zwiebeln, Tomaten, nach alter nordindischer Art",
+            "tag": "F"
+          },
+          {
+            "id": 136,
+            "name": "Scampi Masala",
+            "price": "14,50",
+            "description": "Großgarnelen mit Ingwer, Knoblauch und verschiedenen Kräutern in feinen indischen Kräutern gebraten",
+            "tag": "B"
+          },
+          {
+            "id": 137,
+            "name": "Scampi Dahiwala",
+            "price": "14,50",
+            "description": "Großgarnelen nach einer speziellen indischen Art mit leckeren Gewürzen und Mandeln in einer Joghurtsauce",
+            "tag": "B/G/H"
+          },
+          {
+            "id": 138,
+            "name": "Scampi Madras (mittelscharf)",
+            "price": "14,50",
+            "description": "Großgarnelen mit Kokosraspeln in einer speziellen Gewürzmischung nach köstlicher, südindischer Art",
+            "tag": "B/H"
+          }
+        ]
+      },
+      {
+        "category": "Biryanis & Reisgerichte",
+        "items": [
+          {
+            "id": 139,
+            "name": "Veg. Biryani",
+            "price": "10,00",
+            "description": "gedämpfter Basmatireis, gebraten mit fr. Gemüse, Nüssen, Rosinen und ausgewogenen Gewürzen"
+          },
+          {
+            "id": 140,
+            "name": "Chicken Biryani",
+            "price": "11,50",
+            "description": "zarte Hühnerfiletstücke zubereitet mit gedämpftem Basmatireis, Zwiebeln, Rosinen, Nüssen und Mandeln in einer speziellen Biryani-Gewürzmischung"
+          },
+          {
+            "id": 141,
+            "name": "Mutton Biryani",
+            "price": "13,50",
+            "description": "zarte Lammfleischstücke gedünstet mit Basmatireis, garniert mit Nüssen und Rosinen"
+          },
+          {
+            "id": 142,
+            "name": "Mix Biryani",
+            "price": "14,50",
+            "description": "zarte Lamm- und Hühnerfleischstücke mit gedämpftem Basmatireis, Zwiebeln, Paprika, Rosinen, Mandeln in spezieller, ausgewogener Biryani-Gewürzmischung"
+          },
+          {
+            "id": 143,
+            "name": "Scampi Biryani",
+            "price": "15,50",
+            "description": "gebr. Riesengarnelen gedünstet mit Basmatireis, Gemüse, orientalischer Gewürzmischung, Nüssen und Rosinen"
+          },
+          {
+            "id": 144,
+            "name": "Tandoori Biryani",
+            "price": "14,50",
+            "description": "gedämpfter Basmatireis, gebraten mit Tandoori-Hähnchenfleisch, Rosinen, Mandeln, ind. Gewürzen"
+          },
+          {
+            "id": 145,
+            "name": "Matter Palau",
+            "price": "10,50",
+            "description": "Gebr. Reis mit grünen Erbsen, Rosinen und Mandeln"
+          },
+          {
+            "id": 146,
+            "name": "Chicken Fried Rice",
+            "price": "13,00",
+            "description": "Gebr. Reis mit grünen Erbsen, Krautsalat, Ei, Ern. und gehacktem Hähnchenfleisch"
+          },
+          {
+            "id": 147,
+            "name": "Vegetable Fried Rice",
+            "price": "11,00",
+            "description": "Gebr. Reis mit grünen Erbsen, Krautsalat, Eiern und Karotten"
+          },
+          {
+            "id": 148,
+            "name": "Kashmiri Palau",
+            "price": "12,50",
+            "description": "Gebr. Reis mit Fruchtstücken (Pfirsich, Papaya, Ananas), Karotten, Rosinen und Mandeln"
+          }
+        ]
+      },
+      {
+        "category": "Finger Food",
+        "note": "nach Wahl mit Ketchup oder Mayonnaise",
+        "items": [
+          {
+            "id": 149,
+            "name": "Chicken Nuggets (4 St.)",
+            "price": "4,50",
+            "description": "",
+            "tag": "A/C"
+          },
+          {
+            "id": 150,
+            "name": "Chicken Nuggets (8 St.)",
+            "price": "7,50",
+            "description": "",
+            "tag": "A/C"
+          },
+          {
+            "id": 151,
+            "name": "Chicken Wings (6 Stück)",
+            "price": "5,00",
+            "description": ""
+          },
+          {
+            "id": 152,
+            "name": "Chicken Wings (9 Stück)",
+            "price": "8,00",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "category": "Dessert",
+        "items": [
+          {
+            "id": 153,
+            "name": "Rasmalai (2 Stück)",
+            "price": "4,00",
+            "description": "ind. Süßspeise aus weichem ind. Frischkäse mit Milch und Pistazien",
+            "tag": "G"
+          },
+          {
+            "id": 154,
+            "name": "Gulab Jaman",
+            "price": "3,50",
+            "description": "Roggenmehlbällchen mit Karamellsauce (3 Stück)",
+            "tag": "C"
+          }
+        ]
+      },
+      {
+        "category": "Getränke",
+        "items": [
+          {
+            "id": 155,
+            "name": "Süß Lassi",
+            "price": "3,00",
+            "size": "0,40L",
+            "tag": "G"
+          },
+          {
+            "id": 156,
+            "name": "Salz Lassi",
+            "price": "3,00",
+            "size": "0,40L",
+            "tag": "G"
+          },
+          {
+            "id": 157,
+            "name": "Mango Lassi",
+            "price": "3,00",
+            "size": "0,40L",
+            "tag": "G"
+          },
+          {
+            "id": 158,
+            "name": "Mangosaft",
+            "price": "3,00",
+            "size": "0,40L"
+          },
+          {
+            "id": 159,
+            "name": "Guavensaft",
+            "price": "3,00",
+            "size": "0,40L"
+          },
+          {
+            "id": 160,
+            "name": "Litchisaft",
+            "price": "3,00",
+            "size": "0,40L"
+          },
+          {
+            "id": 161,
+            "name": "Coca Cola, Fanta, Sprite, MezzoMix, Wasser",
+            "price": "2,75",
+            "size": "0,33L",
+            "tag": "7/12"
+          },
+          {
+            "id": 162,
+            "name": "Coca Cola, Fanta, Sprite, MezzoMix, Wasser",
+            "price": "3,50",
+            "size": "1,00L",
+            "tag": "7/12"
+          },
+          {
+            "id": 163,
+            "name": "Kingfisher",
+            "price": "3,50",
+            "size": "0,33L",
+            "description": "Indiens Premium Lagerbier"
+          }
+        ]
+      },
+      {
+        "category": "Kindermenü",
+        "items": [
+          {
+            "id": 164,
+            "name": "Kindermenü",
+            "price": "4,90",
+            "description": "6 Stück Chicken Nuggets + 1 Capri Sonne + 1 Überraschung"
+          }
+        ]
+      }
+    ]
+  }
+}

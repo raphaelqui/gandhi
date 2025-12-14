@@ -11,8 +11,10 @@ const RestaurantMap = () => {
   };
 
   const mapContainerStyle = {
-    width: "420px",
-    height: "312px",
+    width: "100%",
+    maxWidth: "420px",
+    height: "auto",
+    aspectRatio: "420/312",
     borderRadius: "3px",
   };
 
